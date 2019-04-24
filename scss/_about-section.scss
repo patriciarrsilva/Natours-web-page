@@ -1,34 +1,45 @@
 @import "./variables";
 
-.about-section__images {
-  position: relative;
-  height: 200px;
-  padding: 50px;
-}
+.about-section {
+  &__article {
+    width: 320px;
+    margin: auto;
+    line-height: 20px;
+  }
 
-.about-section__image {
-  border-radius: 2px;
-}
+  &__images {
+    position: relative;
+    height: 200px;
+    padding: 50px 0;
+  }
 
-.about-section__image--first {
-  width: 35%;
-  position: absolute;
-  left: 13px;
-  box-shadow: $default-box-shadow;
-}
+  &__image {
+    border-radius: 2px;
+  }
 
-.about-section__image--second {
-  width: 37%;
-  position: absolute;
-  top: 39px;
-  left: 141px;
-  z-index: 1;
-}
+  &__image--first {
+    width: 35%;
+    position: absolute;
+    box-shadow: $box-shadow-2;
+  }
 
-.about-section__image--third {
-  width: 35%;
-  position: absolute;
-  right: 20px;
-  top: 52px;
-  box-shadow: $default-box-shadow;
+  &__image--second {
+    width: 37%;
+    position: absolute;
+    top: 42px;
+    left: 100px;
+    z-index: 1;
+    box-shadow: $box-shadow-2;
+
+    &:hover {
+    }
+  }
+
+  &__image--third {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    top: 55px;
+    box-shadow: $box-shadow-2;
+  }
 }

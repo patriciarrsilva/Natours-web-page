@@ -13,15 +13,8 @@
 
     &:hover {
       transform: rotate(2deg) skew(15deg) scale(1.1);
-      text-shadow: 1px 10px 10px $color-grey-dark-2-trans50;
+      text-shadow: 1px 10px 10px $color-grey-dark-2;
     }
-  }
-
-  /*ia aqui*/
-  &__container {
-    width: 90%;
-    margin: auto;
-    line-height: 20px;
   }
 
   &__subtitle {
@@ -37,10 +30,20 @@
   }
 
   &__link {
+    display: inline-block;
     color: $color-primary-dark;
     font-size: 0.8rem;
     text-decoration: none;
     border-bottom: 1px solid;
-    padding-bottom: 7px;
+    padding: 7px;
+    transition-duration: 0.2s;
+
+    &:hover {
+      box-shadow: $box-shadow-2;
+      background-color: $color-primary;
+      color: $color-white;
+      border: none;
+      transform: translate(0, -4px);
+    }
   }
 }

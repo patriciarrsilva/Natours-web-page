@@ -346,7 +346,7 @@ template {
   height: 57px;
   background-color: #fff;
   border: none;
-  box-shadow: 0px 0px 10px 5px #99999980;
+  box-shadow: 0px 0px 5px 2px #99999933;
   z-index: 2;
 }
 .nav-button__img {
@@ -402,9 +402,6 @@ template {
   width: 100%;
 }
 
-.main {
-  /*ia aqui*/
-}
 .main__title {
   color: #55c57a;
   text-align: center;
@@ -417,12 +414,7 @@ template {
 }
 .main__title:hover {
   transform: rotate(2deg) skew(15deg) scale(1.1);
-  text-shadow: 1px 10px 10px #99999980;
-}
-.main__container {
-  width: 90%;
-  margin: auto;
-  line-height: 20px;
+  text-shadow: 1px 10px 10px #999;
 }
 .main__subtitle {
   color: #777;
@@ -435,44 +427,54 @@ template {
   margin-bottom: 25px;
 }
 .main__link {
+  display: inline-block;
   color: #28b485;
   font-size: 0.8rem;
   text-decoration: none;
   border-bottom: 1px solid;
-  padding-bottom: 7px;
+  padding: 7px;
+  transition-duration: 0.2s;
+}
+.main__link:hover {
+  box-shadow: 0px 10px 5px 0 #99999940;
+  background-color: #55c57a;
+  color: #fff;
+  border: none;
+  transform: translate(0, -4px);
 }
 
+.about-section__article {
+  width: 320px;
+  margin: auto;
+  line-height: 20px;
+}
 .about-section__images {
   position: relative;
   height: 200px;
-  padding: 50px;
+  padding: 50px 0;
 }
-
 .about-section__image {
   border-radius: 2px;
 }
-
 .about-section__image--first {
   width: 35%;
   position: absolute;
-  left: 13px;
-  box-shadow: 0px 0px 10px 5px #99999980;
+  box-shadow: 0px 10px 5px 0 #99999940;
 }
-
 .about-section__image--second {
   width: 37%;
   position: absolute;
-  top: 39px;
-  left: 141px;
+  top: 42px;
+  left: 100px;
   z-index: 1;
+  box-shadow: 0px 10px 5px 0 #99999940;
 }
-
 .about-section__image--third {
   width: 35%;
   position: absolute;
-  right: 20px;
-  top: 52px;
-  box-shadow: 0px 0px 10px 5px #99999980;
+  right: 0;
+  top: 55px;
+  box-shadow: 0px 10px 5px 0 #99999940;
 }
 
 .advantages-section {
@@ -518,7 +520,7 @@ nav,
   transition-duration: 0.2s;
 }
 .button-link:hover {
-  box-shadow: 0px 0px 10px 5px #99999980;
+  box-shadow: 0px 0px 5px 2px #99999933;
   transform: translate(0, -4px);
 }
 
