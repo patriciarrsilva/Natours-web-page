@@ -3,6 +3,8 @@
 @import "./nav-button";
 @import "./header";
 @import "./main-section";
+@import "./about-section";
+@import "./advantages-section";
 
 /*change this at the end*/
 nav,
@@ -34,7 +36,7 @@ nav,
   transition-duration: 0.2s;
 
   &:hover {
-    box-shadow: 0px 0px 10px 5px $color-grey-dark-2-trans;
+    box-shadow: $default-box-shadow;
     transform: translate(0, -4px);
   }
 }

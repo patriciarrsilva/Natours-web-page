@@ -1,0 +1,9 @@
+@import "./variables";
+
+.advantages-section {
+  @include background-image(0, 10%, 100%, 0, 100%, 100%, 0%, 100%);
+}
+
+.advantages-section__img {
+  width: 50px;
+}
