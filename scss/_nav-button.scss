@@ -7,12 +7,15 @@
   height: 57px;
   background-color: $color-white;
   border: none;
-  box-shadow: 0px 0px 10px 5px $color-grey-tans;
-  z-index: 99;
+  box-shadow: 0px 0px 10px 5px $color-grey-dark-2-trans;
+  z-index: 1;
 
   &__img {
     margin: auto;
-    height: 30px;
     width: 30px;
+
+    &:hover {
+      width: 35px;
+    }
   }
 }

@@ -1,0 +1,16 @@
+@import "./variables";
+
+.main__title {
+  color: $color-primary;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  line-height: 35px;
+  transition-duration: 0.2s;
+
+  &:hover {
+    transform: rotate(2deg) skew(15deg);
+    text-shadow: 1px 10px 10px $color-grey-dark-2-trans;
+  }
+}
