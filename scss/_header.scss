@@ -20,6 +20,11 @@
     padding: 30px 0 0 30px;
   }
 
+  &__main {
+    position: relative;
+    top: 12%;
+  }
+
   &__title {
     @include header-titles();
     font-weight: normal;
@@ -33,34 +38,16 @@
     margin: 15px 0 50px;
   }
 
-  &__main {
-    position: relative;
-    top: 12%;
+  &__button-link {
+    margin: auto;
   }
 }
 
 .logo {
   display: block;
   width: 85px;
-}
-
-.logo__img {
-  width: 100%;
-}
-
-.button-menu {
-  border-radius: 50%;
-  position: fixed;
-  top: 25px;
-  right: 25px;
-  width: 57px;
-  height: 57px;
-  background-color: $color-white;
-  border: none;
 
   &__img {
-    margin: auto;
-    height: 30px;
-    width: 30px;
+    width: 100%;
   }
 }
