@@ -1,13 +1,13 @@
-# Natours-web-page
+# Natours web page
 
 ## What is the purpose of this repository?
 
-In this repository I am sharing [my recreation]() of the [Natours web page](https://natours.netlify.com/).
+In this repository I am sharing [my recreation](https://patriciarrsilva.github.io/Natours-web-page/) of the [Natours web page](https://natours.netlify.com/).
 
 ## Quickstart
 
 To see it:
-* click [here]()
+* click [here](https://patriciarrsilva.github.io/Natours-web-page/)
 
 or
 
