@@ -6,7 +6,7 @@
 @import "./about-section";
 @import "./advantages-section";
 
-/*change this at the end*/
+/*change this at the end, selected text has a green background*/
 nav,
 #popup {
   display: none;
@@ -15,6 +15,11 @@ nav,
 
 * {
   box-sizing: border-box;
+}
+
+*::selection {
+  background: $color-primary;
+  color: $color-white;
 }
 
 .body {
@@ -34,9 +39,29 @@ nav,
   text-transform: uppercase;
   font-size: 0.8rem;
   transition-duration: 0.2s;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: $color-white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
 
   &:hover {
     box-shadow: $default-box-shadow;
     transform: translate(0, -4px);
+
+    &::after {
+      opacity: 0;
+      transform: scale(1.4, 1.6);
+    }
   }
 }

@@ -1,5 +1,11 @@
 @import "./variables";
 
+@mixin hovering-imgs {
+  border: 10px solid $color-primary;
+  padding: 10px;
+  width: 30%;
+}
+
 .about-section {
   &__article {
     width: 320px;
@@ -9,8 +15,11 @@
 
   &__images {
     position: relative;
-    height: 200px;
-    padding: 50px 0;
+    height: 125px;
+
+    &:hover img:not(:hover) {
+      width: 30%;
+    }
   }
 
   &__image {
@@ -18,28 +27,39 @@
   }
 
   &__image--first {
-    width: 35%;
-    position: absolute;
+    width: 40%;
+    float: left;
     box-shadow: $box-shadow-2;
+    transition: width 0.2s;
+
+    &:hover {
+      @include hovering-imgs();
+    }
   }
 
   &__image--second {
-    width: 37%;
+    box-sizing: content-box;
+    width: 40%;
     position: absolute;
-    top: 42px;
+    top: -5px;
     left: 100px;
-    z-index: 1;
+    z-index: 2;
     box-shadow: $box-shadow-2;
+    transition: width 0.2s;
 
     &:hover {
+      @include hovering-imgs();
     }
   }
 
   &__image--third {
-    width: 35%;
-    position: absolute;
-    right: 0;
-    top: 55px;
+    width: 40%;
+    float: right;
     box-shadow: $box-shadow-2;
+    transition: width 0.2s;
+
+    &:hover {
+      @include hovering-imgs();
+    }
   }
 }
