@@ -1,0 +1,21 @@
+@import "./variables";
+
+.benefits-section {
+  @include background-image(
+    "../img/nat-4.jpg",
+    0,
+    10vh,
+    100%,
+    0,
+    100%,
+    100%,
+    0%,
+    100%
+  );
+  position: relative;
+  top: 140px;
+}
+
+.benefits-section__img {
+  width: 50px;
+}

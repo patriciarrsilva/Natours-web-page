@@ -1,14 +1,24 @@
 @import "./variables";
 
 @mixin header-titles {
-  color: $color-white;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 6px;
+  color: $color-white;
 }
 
 .header {
-  @include background-image(0, 0, 100%, 0, 100%, 90%, 0%, 100%);
+  @include background-image(
+    "../img/hero-small.jpg",
+    0,
+    0,
+    100%,
+    0,
+    100%,
+    90vh,
+    0%,
+    100%
+  );
 
   &__logo {
     padding: 30px 0 0 30px;
@@ -21,8 +31,8 @@
 
   &__title {
     @include header-titles();
-    font-weight: normal;
     font-size: 3.3rem;
+    font-weight: normal;
     margin: 0;
   }
 
@@ -38,8 +48,8 @@
 }
 
 .logo {
-  display: block;
   width: 85px;
+  display: block;
 
   &__img {
     width: 100%;

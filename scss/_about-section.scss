@@ -3,49 +3,44 @@
 @mixin hovering-imgs {
   border: 10px solid $color-primary;
   padding: 10px;
-  width: 30%;
 }
 
 .about-section {
   &__article {
+    line-height: 20px;
     width: 320px;
     margin: auto;
-    line-height: 20px;
   }
 
   &__images {
+    width: 350px;
     position: relative;
-    height: 125px;
 
     &:hover img:not(:hover) {
       width: 30%;
+      z-index: -1;
     }
   }
 
   &__image {
+    box-sizing: content-box;
+    width: 40%;
     border-radius: 2px;
+    box-shadow: $box-shadow-2;
+    position: absolute;
+    transition: padding 0.2s;
   }
 
   &__image--first {
-    width: 40%;
-    float: left;
-    box-shadow: $box-shadow-2;
-    transition: width 0.2s;
-
     &:hover {
       @include hovering-imgs();
     }
   }
 
   &__image--second {
-    box-sizing: content-box;
-    width: 40%;
-    position: absolute;
     top: -5px;
-    left: 100px;
+    right: 100px;
     z-index: 2;
-    box-shadow: $box-shadow-2;
-    transition: width 0.2s;
 
     &:hover {
       @include hovering-imgs();
@@ -53,10 +48,8 @@
   }
 
   &__image--third {
-    width: 40%;
-    float: right;
-    box-shadow: $box-shadow-2;
-    transition: width 0.2s;
+    right: 0;
+    top: 5px;
 
     &:hover {
       @include hovering-imgs();

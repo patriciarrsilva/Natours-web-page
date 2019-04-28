@@ -20,13 +20,10 @@ $color-white: #fff;
 $color-black: #000;
 
 // COLORS with transparency
-
-$color-primary-light-trans80: #7ed56fcc;
-$color-primary-dark-trans80: #28b485cc;
-
+$color-primary-light-trans-1: #7ed56fcc;
+$color-primary-dark-trans-1: #28b485cc;
 // for buttons
-$color-grey-dark-2-trans: #99999933;
-
+$color-grey-dark-2-trans-1: #99999933;
 // for links and images
 $color-grey-dark-2-trans-2: #99999940;
 
@@ -35,17 +32,19 @@ $default-font-size: 1.6rem;
 $default-font-family: "Lato";
 
 // BOX-SHADOW
-
 // for buttons
-$default-box-shadow: 0px 0px 5px 2px $color-grey-dark-2-trans;
-
+$default-box-shadow: 0px 0px 5px 2px $color-grey-dark-2-trans-1;
 // for links and images
 $box-shadow-2: 0px 10px 5px 0 $color-grey-dark-2-trans-2;
 
 // MIXINS
-@mixin background-image($tlx, $tly, $trx, $try, $brx, $bry, $blx, $bly) {
-  background-image: linear-gradient(to right bottom, #7ed56fcc, #28b485cc),
-    url("../img/nat-4.jpg");
+@mixin background-image($url, $tlx, $tly, $trx, $try, $brx, $bry, $blx, $bly) {
+  background-image: linear-gradient(
+      to right bottom,
+      $color-primary-light-trans-1,
+      $color-primary-dark-trans-1
+    ),
+    url($url);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

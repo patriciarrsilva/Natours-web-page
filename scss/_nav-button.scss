@@ -1,18 +1,18 @@
 .nav-button {
+  background-color: $color-white;
+  border: none;
   border-radius: 50%;
+  width: 57px;
+  height: 57px;
+  box-shadow: $default-box-shadow;
   position: fixed;
   top: 25px;
   right: 25px;
-  width: 57px;
-  height: 57px;
-  background-color: $color-white;
-  border: none;
-  box-shadow: $default-box-shadow;
   z-index: 2;
 
   &__img {
-    margin: auto;
     width: 30px;
+    margin: auto;
 
     &:hover {
       width: 35px;
