@@ -26,6 +26,8 @@ $color-primary-dark-trans-1: #28b485cc;
 $color-grey-dark-2-trans-1: #99999933;
 // for links and images
 $color-grey-dark-2-trans-2: #99999940;
+//backgroung
+$color-grey-light-1-trans-1: #f7f7f7cc;
 
 // FONT
 $default-font-size: 1.6rem;
@@ -48,6 +50,5 @@ $box-shadow-2: 0px 10px 5px 0 $color-grey-dark-2-trans-2;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
   clip-path: polygon($tlx $tly, $trx $try, $brx $bry, $blx $bly);
 }

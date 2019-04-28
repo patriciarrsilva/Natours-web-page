@@ -1,0 +1,13 @@
+.tours-section {
+  position: relative;
+  top: 100px;
+
+  &__article {
+    width: 350px;
+    margin: auto;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
