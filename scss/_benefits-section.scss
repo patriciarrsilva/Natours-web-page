@@ -12,12 +12,11 @@
     0%,
     100%
   );
+  text-align: center;
   position: relative;
   top: 140px;
-  text-align: center;
 
   &__container {
-    //position: relative;
     top: 100px;
   }
 
@@ -27,6 +26,7 @@
     width: 350px;
     margin: 0 auto 45px auto;
     display: inline-block;
+    transition: transform 0.4s;
 
     &--margin-top {
       margin-top: 100px;
@@ -34,6 +34,11 @@
 
     &--margin-bottom {
       margin-bottom: 100px;
+    }
+
+    &:hover {
+      box-shadow: $default-box-shadow;
+      transform: translate(0, -10px) scale(1.05);
     }
   }
 
