@@ -421,11 +421,6 @@ template {
   text-transform: uppercase;
   font-size: 0.8rem;
 }
-.main__paragraph {
-  color: #777;
-  font-size: 0.8rem;
-  margin-bottom: 25px;
-}
 .main__link {
   display: inline-block;
   color: #28b485;
@@ -448,6 +443,11 @@ template {
   line-height: 20px;
   width: 320px;
   margin: auto;
+}
+.about-section__paragraph {
+  color: #777;
+  font-size: 0.8rem;
+  margin-bottom: 25px;
 }
 .about-section__images {
   width: 350px;
@@ -487,6 +487,11 @@ template {
   padding: 10px;
 }
 
+.benefits-section__paragraph {
+  color: #777;
+  font-size: 0.77rem;
+}
+
 .benefits-section {
   background-image: linear-gradient(to right bottom, #7ed56fcc, #28b485cc), url("../img/nat-4.jpg");
   background-repeat: no-repeat;
@@ -505,6 +510,7 @@ template {
   border-radius: 3px;
   width: 350px;
   margin: 0 auto 45px auto;
+  padding: 15px;
   display: inline-block;
   transition: transform 0.4s;
 }
@@ -520,7 +526,7 @@ template {
 }
 .benefits-section__img {
   width: 50px;
-  margin: 30px 0 13px;
+  margin: 10px 0;
 }
 
 .tours-section {
@@ -533,6 +539,16 @@ template {
 }
 .tours-section__img {
   width: 100%;
+}
+
+.main__paragraph--list-item {
+  color: #777;
+  font-size: 0.7rem;
+  text-align: center;
+  list-style-type: none;
+  border-bottom: 2px solid #eee;
+  margin: 0;
+  padding: 10px;
 }
 
 /*change this at the end*/

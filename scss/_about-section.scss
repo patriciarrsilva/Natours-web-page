@@ -12,6 +12,12 @@
     margin: auto;
   }
 
+  &__paragraph {
+    color: $color-grey-dark;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+  }
+
   &__images {
     width: 350px;
     position: relative;

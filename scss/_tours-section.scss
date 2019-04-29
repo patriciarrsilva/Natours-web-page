@@ -11,3 +11,13 @@
     width: 100%;
   }
 }
+
+.main__paragraph--list-item {
+  color: $color-grey-dark;
+  font-size: 0.7rem;
+  text-align: center;
+  list-style-type: none;
+  border-bottom: 2px solid $color-grey-light-2;
+  margin: 0;
+  padding: 10px;
+}
