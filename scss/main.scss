@@ -25,7 +25,6 @@ nav,
 
 .body {
   font-family: $default-font-family, sans-serif;
-  background-color: $color-grey-light-1;
 }
 
 .button-link {
@@ -37,6 +36,7 @@ nav,
   background-color: $color-white;
   border-radius: 50px;
   width: 200px;
+  margin: auto;
   padding: 15px;
   display: block;
   position: relative;
@@ -57,7 +57,7 @@ nav,
   }
 
   &:hover {
-    box-shadow: $default-box-shadow;
+    box-shadow: $box-shadow-2;
     transform: translate(0, -4px);
 
     &::after {

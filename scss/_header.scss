@@ -10,6 +10,8 @@
 .header {
   @include background-image(
     "../img/hero-small.jpg",
+    $color-primary-light-trans-1,
+    $color-primary-dark-trans-1,
     0,
     0,
     100%,
@@ -41,10 +43,6 @@
     @include header-titles();
     font-size: 1rem;
     margin: 20px 0 55px;
-  }
-
-  &__button-link {
-    margin: auto;
   }
 }
 

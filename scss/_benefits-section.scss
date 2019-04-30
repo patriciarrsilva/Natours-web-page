@@ -8,6 +8,8 @@
 .benefits-section {
   @include background-image(
     "../img/nat-4.jpg",
+    $color-primary-light-trans-1,
+    $color-primary-dark-trans-1,
     0,
     10vh,
     100%,
@@ -18,17 +20,17 @@
     100%
   );
   text-align: center;
-  position: relative;
-  top: 140px;
+  margin-top: -75px;
 
   &__container {
-    top: 100px;
+    padding: 0 20px;
   }
 
   &__article {
     background-color: $color-grey-light-1-trans-1;
     border-radius: 3px;
-    width: 350px;
+    box-shadow: $box-shadow-3;
+    max-width: 350px;
     margin: 0 auto 45px auto;
     padding: 15px;
     display: inline-block;
@@ -43,7 +45,6 @@
     }
 
     &:hover {
-      box-shadow: $default-box-shadow;
       transform: translate(0, -10px) scale(1.05);
     }
   }

@@ -6,10 +6,15 @@
 }
 
 .about-section {
+  background-color: $color-grey-light-1;
+  margin-top: -60px;
+  padding-top: 85px;
+
   &__article {
     line-height: 20px;
-    width: 320px;
+    max-width: 400px;
     margin: auto;
+    padding: 0 20px;
   }
 
   &__paragraph {
@@ -21,6 +26,7 @@
   &__images {
     width: 350px;
     position: relative;
+    height: 225px;
 
     &:hover img:not(:hover) {
       width: 30%;

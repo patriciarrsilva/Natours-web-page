@@ -22,30 +22,48 @@ $color-black: #000;
 // COLORS with transparency
 $color-primary-light-trans-1: #7ed56fcc;
 $color-primary-dark-trans-1: #28b485cc;
-// for buttons
-$color-grey-dark-2-trans-1: #99999933;
-// for links and images
-$color-grey-dark-2-trans-2: #99999940;
-//backgroung
+
+// card backgroung
 $color-grey-light-1-trans-1: #f7f7f7cc;
+
+// for nav button
+$color-black-trans-1: #0000001a;
+
+// for images and link buttons
+$color-black-trans-2: #00000033;
+
+// for cards
+$color-black-trans-3: #00000026;
 
 // FONT
 $default-font-size: 1.6rem;
 $default-font-family: "Lato";
 
 // BOX-SHADOW
-// for buttons
-$default-box-shadow: 0px 0px 5px 2px $color-grey-dark-2-trans-1;
-// for links and images
-$box-shadow-2: 0px 10px 5px 0 $color-grey-dark-2-trans-2;
+// for nav button button
+$box-shadow-1: 0 10px 30px $color-black-trans-1;
+
+// for images and link buttons
+$box-shadow-2: 0 15px 30px $color-black-trans-2;
+
+// for cards
+$box-shadow-3: 0 1px 30px $color-black-trans-3;
 
 // MIXINS
-@mixin background-image($url, $tlx, $tly, $trx, $try, $brx, $bry, $blx, $bly) {
-  background-image: linear-gradient(
-      to right bottom,
-      $color-primary-light-trans-1,
-      $color-primary-dark-trans-1
-    ),
+@mixin background-image(
+  $url,
+  $color1,
+  $color2,
+  $tlx,
+  $tly,
+  $trx,
+  $try,
+  $brx,
+  $bry,
+  $blx,
+  $bly
+) {
+  background-image: linear-gradient(to right bottom, $color1, $color2),
     url($url);
   background-repeat: no-repeat;
   background-size: cover;

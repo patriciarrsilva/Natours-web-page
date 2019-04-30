@@ -343,7 +343,7 @@ template {
   border-radius: 50%;
   width: 57px;
   height: 57px;
-  box-shadow: 0px 0px 5px 2px #99999933;
+  box-shadow: 0 10px 30px #0000001a;
   position: fixed;
   top: 25px;
   right: 25px;
@@ -390,9 +390,6 @@ template {
   font-size: 1rem;
   margin: 20px 0 55px;
 }
-.header__button-link {
-  margin: auto;
-}
 
 .logo {
   width: 85px;
@@ -409,8 +406,8 @@ template {
   font-size: 1.3rem;
   letter-spacing: 3px;
   line-height: 35px;
+  margin-bottom: 45px;
   transition-duration: 0.2s;
-  margin: 45px 0;
 }
 .main__title:hover {
   transform: rotate(2deg) skew(15deg) scale(1.1);
@@ -428,21 +425,27 @@ template {
   text-decoration: none;
   border-bottom: 1px solid;
   padding: 7px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   transition-duration: 0.2s;
 }
 .main__link:hover {
-  box-shadow: 0px 10px 5px 0 #99999940;
+  box-shadow: 0 15px 30px #00000033;
   background-color: #55c57a;
   color: #fff;
   border: none;
   transform: translate(0, -4px);
 }
 
+.about-section {
+  background-color: #f7f7f7;
+  margin-top: -60px;
+  padding-top: 85px;
+}
 .about-section__article {
   line-height: 20px;
-  width: 320px;
+  max-width: 400px;
   margin: auto;
+  padding: 0 20px;
 }
 .about-section__paragraph {
   color: #777;
@@ -452,6 +455,7 @@ template {
 .about-section__images {
   width: 350px;
   position: relative;
+  height: 225px;
 }
 .about-section__images:hover img:not(:hover) {
   width: 30%;
@@ -461,7 +465,7 @@ template {
   box-sizing: content-box;
   width: 40%;
   border-radius: 2px;
-  box-shadow: 0px 10px 5px 0 #99999940;
+  box-shadow: 0 15px 30px #00000033;
   position: absolute;
   transition: padding 0.2s;
 }
@@ -499,16 +503,16 @@ template {
   background-position: center;
   clip-path: polygon(0 10vh, 100% 0, 100% 95%, 0% 100%);
   text-align: center;
-  position: relative;
-  top: 140px;
+  margin-top: -75px;
 }
 .benefits-section__container {
-  top: 100px;
+  padding: 0 20px;
 }
 .benefits-section__article {
   background-color: #f7f7f7cc;
   border-radius: 3px;
-  width: 350px;
+  box-shadow: 0 1px 30px #00000026;
+  max-width: 350px;
   margin: 0 auto 45px auto;
   padding: 15px;
   display: inline-block;
@@ -521,7 +525,6 @@ template {
   margin-bottom: 100px;
 }
 .benefits-section__article:hover {
-  box-shadow: 0px 0px 5px 2px #99999933;
   transform: translate(0, -10px) scale(1.05);
 }
 .benefits-section__img {
@@ -530,15 +533,40 @@ template {
 }
 
 .tours-section {
-  position: relative;
-  top: 100px;
+  background-color: #f7f7f7;
+  margin-top: -55px;
+  padding: 90px 20px 0;
 }
 .tours-section__article {
-  width: 350px;
-  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 1px 30px #00000026;
+  max-width: 335px;
+  margin: 0 auto 50px;
 }
 .tours-section__img {
-  width: 100%;
+  height: 200px;
+  background-blend-mode: screen;
+}
+.tours-section__img--orange {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.tours-section__img--green {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.tours-section__img--blue {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .main__paragraph--list-item {
@@ -569,7 +597,6 @@ nav,
 
 .body {
   font-family: "Lato", sans-serif;
-  background-color: #f7f7f7;
 }
 
 .button-link {
@@ -581,6 +608,7 @@ nav,
   background-color: #fff;
   border-radius: 50px;
   width: 200px;
+  margin: auto;
   padding: 15px;
   display: block;
   position: relative;
@@ -600,7 +628,7 @@ nav,
   transition: all 0.4s;
 }
 .button-link:hover {
-  box-shadow: 0px 0px 5px 2px #99999933;
+  box-shadow: 0 15px 30px #00000033;
   transform: translate(0, -4px);
 }
 .button-link:hover::after {
