@@ -1,3 +1,5 @@
+@import "./variables";
+
 .tours-section {
   background-color: $color-grey-light-1;
   margin-top: -55px;
@@ -7,12 +9,15 @@
     background-color: $color-white;
     box-shadow: $box-shadow-3;
     max-width: 335px;
+    border-radius: 3px;
     margin: 0 auto 50px;
+    position: relative;
   }
 
   &__img {
-    height: 200px;
+    height: 175px;
     background-blend-mode: screen;
+    border-radius: 3px 3px 0 0;
 
     &--orange {
       @include background-image(
@@ -62,6 +67,101 @@
       );
     }
   }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    max-width: 232px;
+    display: inline;
+    -webkit-box-decoration-break: clone;
+    padding: 8px;
+    position: absolute;
+    top: 65px;
+    right: 16px;
+
+    &--orange {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-secondary-light-trans,
+        $color-secondary-dark-trans
+      );
+    }
+
+    &--green {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light-trans,
+        $color-primary-dark-trans
+      );
+    }
+
+    &--blue {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-tertiary-light-trans,
+        $color-tertiary-dark-trans
+      );
+    }
+  }
+
+  &__list {
+    max-width: 65%;
+    margin: auto;
+    padding: 0;
+
+    & .main__paragraph--list-item:last-child {
+      border: none;
+    }
+  }
+
+  &__card-back {
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    border-radius: 0 0 3px 3px;
+
+    &--orange {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-secondary-light,
+        $color-secondary-dark
+      );
+    }
+
+    &--green {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary-dark
+      );
+    }
+
+    &--blue {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-tertiary-light,
+        $color-tertiary-dark
+      );
+    }
+  }
+
+  &__paragraph {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-white;
+    padding-top: 55px;
+  }
+
+  &__price {
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-white;
+    margin: 0 0 60px;
+  }
 }
 
 .main__paragraph--list-item {
@@ -69,7 +169,23 @@
   font-size: 0.7rem;
   text-align: center;
   list-style-type: none;
-  border-bottom: 2px solid $color-grey-light-2;
+  border-bottom: 1px solid $color-grey-light-2;
   margin: 0;
-  padding: 10px;
+  padding: 12px;
+}
+
+.button-link {
+  &--tours-card {
+    max-width: 140px;
+    top: -30px;
+  }
+
+  &--tours-section {
+    color: $color-white;
+    background-color: $color-primary;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
 }

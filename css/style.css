@@ -337,6 +337,63 @@ template {
   display: none;
 }
 
+/*change this at the end*/
+nav,
+#popup {
+  display: none;
+}
+
+/**/
+* {
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: #fff;
+  background-color: #55c57a;
+}
+
+.body {
+  font-family: "Lato", sans-serif;
+}
+
+.button-link {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #777;
+  background-color: #fff;
+  border-radius: 50px;
+  width: 200px;
+  margin: auto;
+  padding: 15px;
+  display: block;
+  position: relative;
+  transition-duration: 0.2s;
+}
+.button-link::after {
+  content: "";
+  background-color: #fff;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.button-link:hover {
+  box-shadow: 0 15px 30px #00000033;
+  transform: translate(0, -4px);
+}
+.button-link:hover::after {
+  opacity: 0;
+  transform: scale(1.4, 1.6);
+}
+
 .nav-button {
   background-color: #fff;
   border: none;
@@ -500,13 +557,19 @@ template {
   background-image: linear-gradient(to right bottom, #7ed56fcc, #28b485cc), url("../img/nat-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: initial;
   clip-path: polygon(0 10vh, 100% 0, 100% 95%, 0% 100%);
   text-align: center;
   margin-top: -75px;
 }
 .benefits-section__container {
   padding: 0 20px;
+}
+.benefits-section__container .benefits-section__article:first-child {
+  margin-top: 100px;
+}
+.benefits-section__container .benefits-section__article:last-child {
+  margin-bottom: 100px;
 }
 .benefits-section__article {
   background-color: #f7f7f7cc;
@@ -517,12 +580,6 @@ template {
   padding: 15px;
   display: inline-block;
   transition: transform 0.4s;
-}
-.benefits-section__article--margin-top {
-  margin-top: 100px;
-}
-.benefits-section__article--margin-bottom {
-  margin-bottom: 100px;
 }
 .benefits-section__article:hover {
   transform: translate(0, -10px) scale(1.05);
@@ -541,32 +598,94 @@ template {
   background-color: #fff;
   box-shadow: 0 1px 30px #00000026;
   max-width: 335px;
+  border-radius: 3px;
   margin: 0 auto 50px;
+  position: relative;
 }
 .tours-section__img {
-  height: 200px;
+  height: 175px;
   background-blend-mode: screen;
+  border-radius: 3px 3px 0 0;
 }
 .tours-section__img--orange {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: initial;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .tours-section__img--green {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: initial;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .tours-section__img--blue {
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: initial;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.tours-section__title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  max-width: 232px;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+  padding: 8px;
+  position: absolute;
+  top: 65px;
+  right: 16px;
+}
+.tours-section__title--orange {
+  background-image: linear-gradient(to right bottom, #ffb900d9, #ff7730d9);
+}
+.tours-section__title--green {
+  background-image: linear-gradient(to right bottom, #7ed56fcc, #28b485cc);
+}
+.tours-section__title--blue {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+.tours-section__list {
+  max-width: 65%;
+  margin: auto;
+  padding: 0;
+}
+.tours-section__list .main__paragraph--list-item:last-child {
+  border: none;
+}
+.tours-section__card-back {
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  border-radius: 0 0 3px 3px;
+}
+.tours-section__card-back--orange {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.tours-section__card-back--green {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+.tours-section__card-back--blue {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+.tours-section__paragraph {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding-top: 55px;
+}
+.tours-section__price {
+  font-size: 2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin: 0 0 60px;
 }
 
 .main__paragraph--list-item {
@@ -574,66 +693,21 @@ template {
   font-size: 0.7rem;
   text-align: center;
   list-style-type: none;
-  border-bottom: 2px solid #eee;
+  border-bottom: 1px solid #eee;
   margin: 0;
-  padding: 10px;
+  padding: 12px;
 }
 
-/*change this at the end*/
-nav,
-#popup {
-  display: none;
+.button-link--tours-card {
+  max-width: 140px;
+  top: -30px;
 }
-
-/**/
-* {
-  box-sizing: border-box;
-}
-
-*::selection {
+.button-link--tours-section {
   color: #fff;
   background-color: #55c57a;
 }
-
-.body {
-  font-family: "Lato", sans-serif;
-}
-
-.button-link {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: #777;
-  background-color: #fff;
-  border-radius: 50px;
-  width: 200px;
-  margin: auto;
-  padding: 15px;
-  display: block;
-  position: relative;
-  transition-duration: 0.2s;
-}
-.button-link::after {
-  content: "";
-  background-color: #fff;
-  border-radius: 50px;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
-.button-link:hover {
-  box-shadow: 0 15px 30px #00000033;
-  transform: translate(0, -4px);
-}
-.button-link:hover::after {
-  opacity: 0;
-  transform: scale(1.4, 1.6);
+.button-link--tours-section::after {
+  background-color: #55c57a;
 }
 
 /*# sourceMappingURL=style.css.map */

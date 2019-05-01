@@ -10,8 +10,8 @@
 .header {
   @include background-image(
     "../img/hero-small.jpg",
-    $color-primary-light-trans-1,
-    $color-primary-dark-trans-1,
+    $color-primary-light-trans,
+    $color-primary-dark-trans,
     0,
     0,
     100%,
@@ -19,7 +19,8 @@
     100%,
     90vh,
     0%,
-    100%
+    100%,
+    center
   );
   height: 100vh;
 
