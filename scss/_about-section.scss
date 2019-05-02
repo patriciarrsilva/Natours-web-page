@@ -23,48 +23,90 @@
     margin-bottom: 25px;
   }
 
-  &__images {
-    width: 350px;
-    position: relative;
-    height: 225px;
+  &__container {
+    width: 100%;
+    float: left;
+  }
 
-    &:hover img:not(:hover) {
+  &__images {
+    //width: 350px;
+    position: relative;
+    //height: 225px;
+
+    /*&:hover img:not(:hover) {
       width: 30%;
       z-index: -1;
+    }*/
+    &:hover .about-section__images:not(:hover) {
+      transform: scale(0.95);
     }
   }
 
   &__image {
-    box-sizing: content-box;
+    /*box-sizing: content-box;
     width: 40%;
     border-radius: 2px;
     box-shadow: $box-shadow-2;
     position: absolute;
-    transition: padding 0.2s;
-  }
+    transition: padding 0.2s;*/
+    box-sizing: content-box;
+    border-radius: 2px;
+    box-shadow: $box-shadow-2;
+    outline-offset: 15px;
+    width: 33.33333333%;
+    float: left;
+    position: relative;
+    transition: all 0.2s;
+    /*
+    width: 55%;
+    z-index: 10;
+    position: absolute;*/
 
-  &__image--first {
     &:hover {
-      @include hovering-imgs();
+      outline: 13px solid #55c57a;
+      //box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      //z-index: 20;
+      transform: scale(1.05) translateY(-0.5rem);
     }
   }
 
+  &__image--first {
+    /*&:hover {
+      @include hovering-imgs();
+    }*/
+    top: 0;
+    left: 0;
+    transform: scale(1.2);
+    //top: -2rem;
+  }
+
   &__image--second {
-    top: -5px;
+    /*top: -5px;
     right: 100px;
     z-index: 2;
 
     &:hover {
       @include hovering-imgs();
-    }
+    }*/
+    top: -1rem;
+    right: 0;
+    transform: scale(1.3);
+    z-index: 2;
+    /*right: 0;
+    top: 2rem;*/
   }
 
   &__image--third {
-    right: 0;
+    /*right: 0;
     top: 5px;
 
     &:hover {
       @include hovering-imgs();
-    }
+    }*/
+    top: 1rem;
+    left: 0;
+    transform: scale(1.1);
+    /*left: 20%;
+    top: 10rem;*/
   }
 }
