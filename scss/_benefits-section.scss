@@ -6,21 +6,19 @@
 }
 
 .benefits-section {
-  @include background-image(
-    "../img/nat-4.jpg",
-    $color-primary-light-trans,
-    $color-primary-dark-trans,
-    0,
-    10vh,
-    100%,
-    0,
-    100%,
-    95%,
-    0%,
-    100%
-  );
+  @include background-image("../img/nat-4.jpg",
+  $color-primary-light-trans,
+  $color-primary-dark-trans,
+  0,
+  10vh,
+  100%,
+  0,
+  100%,
+  95%,
+  0%,
+  100%);
   text-align: center;
-  margin-top: 100px;
+  margin-top: -60px;
 
   &__container {
     padding: 0 20px;
