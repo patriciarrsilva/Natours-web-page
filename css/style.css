@@ -475,6 +475,11 @@ nav,
   text-transform: uppercase;
   font-size: 0.8rem;
 }
+.main__paragraph {
+  color: #777;
+  font-size: 0.8rem;
+  margin-bottom: 25px;
+}
 .main__link {
   display: inline-block;
   color: #28b485;
@@ -506,11 +511,6 @@ nav,
 }
 .about-section__text {
   margin-bottom: 30px;
-}
-.about-section__paragraph {
-  color: #777;
-  font-size: 0.8rem;
-  margin-bottom: 25px;
 }
 .about-section__images {
   position: relative;
@@ -595,15 +595,15 @@ nav,
 .tours-section__article {
   background-color: #fff;
   box-shadow: 0 1px 30px #00000026;
-  max-width: 335px;
   border-radius: 3px;
+  max-width: 335px;
   margin: 0 auto 50px;
   position: relative;
 }
 .tours-section__img {
   height: 175px;
-  background-blend-mode: screen;
   border-radius: 3px 3px 0 0;
+  background-blend-mode: screen;
 }
 .tours-section__img--orange {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg");
@@ -661,8 +661,8 @@ nav,
   border: none;
 }
 .tours-section__card-back {
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
   border-radius: 0 0 3px 3px;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
 .tours-section__card-back--orange {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
@@ -690,9 +690,9 @@ nav,
 }
 
 .main__paragraph--list-item {
-  color: #777;
   font-size: 0.7rem;
   text-align: center;
+  color: #777;
   list-style-type: none;
   border-bottom: 1px solid #eee;
   margin: 0;
@@ -709,6 +709,36 @@ nav,
 }
 .button-link--tours-section::after {
   background-color: #55c57a;
+}
+
+.stories-section {
+  position: relative;
+}
+.stories-section__video {
+  width: 100%;
+  opacity: 0.15;
+  position: absolute;
+  z-index: -1;
+}
+.stories-section__article {
+  background-color: #f7f7f7cc;
+  border-radius: 3px;
+  max-width: 350px;
+  margin: 0 auto 45px auto;
+  padding: 15px;
+}
+.stories-section__figure {
+  float: left;
+  margin: 0;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  shape-outside: circle(50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.stories-section__image {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

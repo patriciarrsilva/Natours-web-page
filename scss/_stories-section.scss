@@ -1,0 +1,33 @@
+.stories-section {
+  position: relative;
+
+  &__video {
+    width: 100%;
+    opacity: 0.15;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__article {
+    background-color: $color-grey-light-1-trans-1;
+    border-radius: 3px;
+    max-width: 350px;
+    margin: 0 auto 45px auto;
+    padding: 15px;
+  }
+
+  &__figure {
+    float: left;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    shape-outside: circle(50%);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

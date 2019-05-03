@@ -52,7 +52,7 @@
           <h3 class="main__subtitle">
             You're going to fall in love with nature
           </h3>
-          <p class="about-section__paragraph">
+          <p class="main__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
             ipsum sapiente aspernatur libero repellat quis consequatur ducimus
             quam nisi exercitationem omnis earum qui.
@@ -61,7 +61,7 @@
           <h3 class="main__subtitle">
             Live adventures like you never have before
           </h3>
-          <p class="about-section__paragraph">
+          <p class="main__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Asperiores nulla deserunt voluptatum nam.
           </p>
@@ -242,18 +242,18 @@
     </section>
 
     <aside class="stories-section">
-      <video autoplay muted>
+      <video autoplay muted loop class="stories-section__video">
         <source src="img/video.webm" type="video/webm" />
         <source src="img/video.mp4" type="video/mp4" />
         Sorry, your browser doesn't support embedded videos.
       </video>
-      <article>
-        <div>
-          <img src="img/nat-8.jpg" alt="woman on a small boat on a river" />
-          <p>Mary Smith</p>
-        </div>
-        <h2 class="main__title">We make people genuinely happy</h2>
-        <h3>I had the best week ever with my family</h3>
+      <h2 class="main__title">We make people genuinely happy</h2>
+      <article class="stories-section__article">
+        <figure class="stories-section__figure">
+          <img src="img/nat-8.jpg" alt="woman on a small boat on a river" class="stories-section__image" />
+          <figcaption>Mary Smith</figcaption>
+        </figure>
+        <h3 class="main__subtitle">I had the best week ever with my family</h3>
         <p class="main__paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
           ipsum sapiente aspernatur libero repellat quis consequatur ducimus
@@ -263,22 +263,20 @@
         </p>
       </article>
 
-      <article>
-        <div>
-          <img src="img/nat-9.jpg" alt="man at the top of a mountain" />
-          <p>Jack Wilson</p>
-        </div>
-        <h2>Wow! My life is completely different now</h2>
-        <h3>I had the best week ever with my family</h3>
-        <p class="main__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-          ipsum sapiente aspernatur libero repellat quis consequatur ducimus
-          quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente
-          aspernatur libero repellat quis consequatur ducimus quam nisi
-          exercitationem omnis earum qui.
-        </p>
+      <article class="stories-section__article">
+        <figure class="stories-section__figure">
+          <img src="img/nat-9.jpg" alt="man at the top of a mountain" class="stories-section__image" />
+          <figcaption>Jack Wilson</figcaption>
+        </figure>
+        <h3 class="main__subtitle">Wow! My life is completely different now</h2>
+          <p class="main__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            ipsum sapiente aspernatur libero repellat quis consequatur ducimus
+            quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente
+            aspernatur libero repellat quis consequatur ducimus quam nisi
+            exercitationem omnis earum qui.
+          </p>
       </article>
-
       <a href="#" class="main__link">Read all stories →</a>
     </aside>
 
