@@ -20,90 +20,82 @@
     border-radius: 3px 3px 0 0;
 
     &--orange {
-      @include background-image(
-        "../img/nat-5.jpg",
-        $color-secondary-light,
-        $color-secondary-dark,
-        0,
-        0,
-        100%,
-        0,
-        100%,
-        85%,
-        0,
-        100%
-      );
+      @include background-image("../img/nat-5.jpg",
+      $color-secondary-light,
+      $color-secondary-dark,
+      0,
+      0,
+      100%,
+      0,
+      100%,
+      85%,
+      0,
+      100%);
     }
 
     &--green {
-      @include background-image(
-        "../img/nat-6.jpg",
-        $color-primary-light,
-        $color-primary-dark,
-        0,
-        0,
-        100%,
-        0,
-        100%,
-        85%,
-        0,
-        100%
-      );
+      @include background-image("../img/nat-6.jpg",
+      $color-primary-light,
+      $color-primary-dark,
+      0,
+      0,
+      100%,
+      0,
+      100%,
+      85%,
+      0,
+      100%);
     }
 
     &--blue {
-      @include background-image(
-        "../img/nat-7.jpg",
-        $color-tertiary-light,
-        $color-tertiary-dark,
-        0,
-        0,
-        100%,
-        0,
-        100%,
-        85%,
-        0,
-        100%
-      );
+      @include background-image("../img/nat-7.jpg",
+      $color-tertiary-light,
+      $color-tertiary-dark,
+      0,
+      0,
+      100%,
+      0,
+      100%,
+      85%,
+      0,
+      100%);
     }
   }
 
   &__title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
     color: $color-white;
-    max-width: 232px;
-    display: inline;
-    -webkit-box-decoration-break: clone;
-    padding: 8px;
+    max-width: 240px;
     position: absolute;
     top: 65px;
     right: 16px;
+  }
+
+  &__span {
+    line-height: 1.7;
+    padding: 8px 12px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 
     &--orange {
-      background-image: linear-gradient(
-        to right bottom,
+      background-image: linear-gradient(to right bottom,
         $color-secondary-light-trans,
-        $color-secondary-dark-trans
-      );
+        $color-secondary-dark-trans);
     }
 
     &--green {
-      background-image: linear-gradient(
-        to right bottom,
+      background-image: linear-gradient(to right bottom,
         $color-primary-light-trans,
-        $color-primary-dark-trans
-      );
+        $color-primary-dark-trans);
     }
 
     &--blue {
-      background-image: linear-gradient(
-        to right bottom,
+      background-image: linear-gradient(to right bottom,
         $color-tertiary-light-trans,
-        $color-tertiary-dark-trans
-      );
+        $color-tertiary-dark-trans);
     }
   }
 
@@ -122,27 +114,21 @@
     border-radius: 0 0 3px 3px;
 
     &--orange {
-      background-image: linear-gradient(
-        to right bottom,
+      background-image: linear-gradient(to right bottom,
         $color-secondary-light,
-        $color-secondary-dark
-      );
+        $color-secondary-dark);
     }
 
     &--green {
-      background-image: linear-gradient(
-        to right bottom,
+      background-image: linear-gradient(to right bottom,
         $color-primary-light,
-        $color-primary-dark
-      );
+        $color-primary-dark);
     }
 
     &--blue {
-      background-image: linear-gradient(
-        to right bottom,
+      background-image: linear-gradient(to right bottom,
         $color-tertiary-light,
-        $color-tertiary-dark
-      );
+        $color-tertiary-dark);
     }
   }
 

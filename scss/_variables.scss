@@ -24,8 +24,8 @@ $color-primary-light-trans: #7ed56fcc;
 $color-primary-dark-trans: #28b485cc;
 $color-secondary-light-trans: #ffb900d9;
 $color-secondary-dark-trans: #ff7730d9;
-$color-tertiary-light-trans: #2998ff;
-$color-tertiary-dark-trans: #5643fa;
+$color-tertiary-light-trans: #2998ffd9;
+$color-tertiary-dark-trans: #5643fad9;
 
 // card backgroung
 $color-grey-light-1-trans-1: #f7f7f7cc;
@@ -54,20 +54,18 @@ $box-shadow-2: 0 15px 30px $color-black-trans-2;
 $box-shadow-3: 0 1px 30px $color-black-trans-3;
 
 // MIXINS
-@mixin background-image(
-  $url,
-  $color1,
-  $color2,
-  $tlx,
-  $tly,
-  $trx,
-  $try,
-  $brx,
-  $bry,
-  $blx,
-  $bly,
-  $pos: initial
-) {
+@mixin background-image($url,
+$color1,
+$color2,
+$tlx,
+$tly,
+$trx,
+$try,
+$brx,
+$bry,
+$blx,
+$bly,
+$pos: initial) {
   background-image: linear-gradient(to right bottom, $color1, $color2),
     url($url);
   background-repeat: no-repeat;
