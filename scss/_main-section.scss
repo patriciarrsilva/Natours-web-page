@@ -3,9 +3,8 @@
     color: $color-primary;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.3rem;
-    letter-spacing: 3px;
-    line-height: 35px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
     margin-bottom: 45px;
     transition-duration: 0.2s;
 
@@ -16,13 +15,12 @@
   }
 
   &__subtitle {
-    color: $color-grey-dark;
     text-transform: uppercase;
     font-size: 0.8rem;
+    margin-top: 0;
   }
 
   &__paragraph {
-    color: $color-grey-dark;
     font-size: 0.8rem;
     margin-bottom: 25px;
   }

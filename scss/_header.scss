@@ -7,17 +7,17 @@
 
 .header {
   @include background-image("../img/hero-small.jpg",
-  $color-primary-light-trans,
-  $color-primary-dark-trans,
-  0,
-  0,
-  100%,
-  0,
-  100%,
-  90vh,
-  0%,
-  100%,
-  center);
+    $color-primary-light-trans,
+    $color-primary-dark-trans,
+    0,
+    0,
+    100%,
+    0,
+    100%,
+    90vh,
+    0%,
+    100%,
+    center);
   height: 100vh;
 
   &__logo {

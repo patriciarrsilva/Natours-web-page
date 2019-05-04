@@ -1,15 +1,19 @@
 .tours-section {
   background-color: $color-grey-light-1;
   margin-top: -55px;
-  padding: 90px 20px 0;
+  padding: 90px 20px 75px;
 
   &__article {
     background-color: $color-white;
     box-shadow: $box-shadow-3;
     border-radius: 3px;
-    max-width: 335px;
+    max-width: 355px;
     margin: 0 auto 50px;
     position: relative;
+
+    &--margin {
+      margin-bottom: 80px;
+    }
   }
 
   &__img {
@@ -19,44 +23,44 @@
 
     &--orange {
       @include background-image("../img/nat-5.jpg",
-      $color-secondary-light,
-      $color-secondary-dark,
-      0,
-      0,
-      100%,
-      0,
-      100%,
-      85%,
-      0,
-      100%);
+        $color-secondary-light,
+        $color-secondary-dark,
+        0,
+        0,
+        100%,
+        0,
+        100%,
+        85%,
+        0,
+        100%);
     }
 
     &--green {
       @include background-image("../img/nat-6.jpg",
-      $color-primary-light,
-      $color-primary-dark,
-      0,
-      0,
-      100%,
-      0,
-      100%,
-      85%,
-      0,
-      100%);
+        $color-primary-light,
+        $color-primary-dark,
+        0,
+        0,
+        100%,
+        0,
+        100%,
+        85%,
+        0,
+        100%);
     }
 
     &--blue {
       @include background-image("../img/nat-7.jpg",
-      $color-tertiary-light,
-      $color-tertiary-dark,
-      0,
-      0,
-      100%,
-      0,
-      100%,
-      85%,
-      0,
-      100%);
+        $color-tertiary-light,
+        $color-tertiary-dark,
+        0,
+        0,
+        100%,
+        0,
+        100%,
+        85%,
+        0,
+        100%);
     }
   }
 
@@ -73,27 +77,26 @@
   }
 
   &__span {
-    line-height: 1.7;
     padding: 8px 12px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
     &--orange {
       background-image: linear-gradient(to right bottom,
-        $color-secondary-light-trans,
-        $color-secondary-dark-trans);
+          $color-secondary-light-trans,
+          $color-secondary-dark-trans);
     }
 
     &--green {
       background-image: linear-gradient(to right bottom,
-        $color-primary-light-trans,
-        $color-primary-dark-trans);
+          $color-primary-light-trans,
+          $color-primary-dark-trans);
     }
 
     &--blue {
       background-image: linear-gradient(to right bottom,
-        $color-tertiary-light-trans,
-        $color-tertiary-dark-trans);
+          $color-tertiary-light-trans,
+          $color-tertiary-dark-trans);
     }
   }
 
@@ -114,20 +117,20 @@
 
     &--orange {
       background-image: linear-gradient(to right bottom,
-        $color-secondary-light,
-        $color-secondary-dark);
+          $color-secondary-light,
+          $color-secondary-dark);
     }
 
     &--green {
       background-image: linear-gradient(to right bottom,
-        $color-primary-light,
-        $color-primary-dark);
+          $color-primary-light,
+          $color-primary-dark);
     }
 
     &--blue {
       background-image: linear-gradient(to right bottom,
-        $color-tertiary-light,
-        $color-tertiary-dark);
+          $color-tertiary-light,
+          $color-tertiary-dark);
     }
   }
 
@@ -152,7 +155,6 @@
 .main__paragraph--list-item {
   font-size: 0.7rem;
   text-align: center;
-  color: $color-grey-dark;
   list-style-type: none;
   border-bottom: 1px solid $color-grey-light-2;
   margin: 0;

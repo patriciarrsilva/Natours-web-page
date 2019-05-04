@@ -1,20 +1,19 @@
 .benefits-section__paragraph {
-  color: $color-grey-dark;
   font-size: 0.77rem;
 }
 
 .benefits-section {
   @include background-image("../img/nat-4.jpg",
-  $color-primary-light-trans,
-  $color-primary-dark-trans,
-  0,
-  10vh,
-  100%,
-  0,
-  100%,
-  95%,
-  0%,
-  100%);
+    $color-primary-light-trans,
+    $color-primary-dark-trans,
+    0,
+    10vh,
+    100%,
+    0,
+    100%,
+    95%,
+    0%,
+    100%);
   text-align: center;
   margin-top: -60px;
 
@@ -34,7 +33,7 @@
     background-color: $color-grey-light-1-trans-1;
     border-radius: 3px;
     box-shadow: $box-shadow-3;
-    max-width: 350px;
+    max-width: 355px;
     margin: 0 auto 45px auto;
     padding: 15px;
     display: inline-block;
@@ -47,6 +46,6 @@
 
   &__img {
     width: 50px;
-    margin: 10px 0;
+    margin: 10px 0 20px;
   }
 }
