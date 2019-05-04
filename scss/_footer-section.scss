@@ -1,0 +1,24 @@
+.footer {
+  background-color: $color-grey-dark-3;
+
+  &__container {
+    max-width: 355px;
+    margin: auto;
+  }
+
+  &__image {
+    display: block;
+    margin: auto;
+    padding: 50px 0;
+  }
+
+  &__list-item {
+    list-style-type: none;
+    display: inline;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+  }
+}

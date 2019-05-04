@@ -817,4 +817,25 @@ nav,
   margin: 35px 0 0;
 }
 
+.footer {
+  background-color: #333;
+}
+.footer__container {
+  max-width: 355px;
+  margin: auto;
+}
+.footer__image {
+  display: block;
+  margin: auto;
+  padding: 50px 0;
+}
+.footer__list-item {
+  list-style-type: none;
+  display: inline;
+}
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
