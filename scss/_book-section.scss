@@ -1,0 +1,42 @@
+.book-section {
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+  &__container {
+    padding: 80px 0;
+  }
+
+  &__form {
+    background-image: linear-gradient($color-white-trans, $color-white-trans), url(../img/nat-10.jpg);
+    background-size: cover;
+    box-shadow: $box-shadow-3;
+    max-width: 355px;
+    padding: 35px 50px 50px;
+    margin: auto;
+  }
+
+  &__input {
+    margin-bottom: 35px;
+  }
+}
+
+.main__title--align-left {
+  text-align: left;
+  margin: 15px 0 25px;
+}
+
+.input {
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  padding: 15px;
+}
+
+.radio__label {
+  font-size: 0.8rem;
+}
+
+.button-link--no-margin {
+  max-width: 60%;
+  margin: 35px 0 0;
+}

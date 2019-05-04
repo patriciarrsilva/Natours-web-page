@@ -28,10 +28,11 @@ nav,
   text-align: center;
   color: $color-grey-dark;
   background-color: $color-white;
+  border: none;
   border-radius: 50px;
   width: 200px;
   margin: auto;
-  padding: 15px;
+  padding: 13px;
   display: block;
   position: relative;
   transition-duration: 0.2s;
@@ -57,6 +58,15 @@ nav,
     &::after {
       opacity: 0;
       transform: scale(1.4, 1.6);
+    }
+  }
+
+  &--green {
+    color: $color-white;
+    background-color: $color-primary;
+
+    &::after {
+      background-color: $color-primary;
     }
   }
 }

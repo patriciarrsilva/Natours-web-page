@@ -238,7 +238,7 @@
         <a href="#" class="button-link">Book now</a>
       </article>
 
-      <a href="#" class="button-link button-link--tours-section">Discover our tours</a>
+      <a href="#" class="button-link button-link--green">Discover all tours</a>
     </section>
 
     <aside class="stories-section">
@@ -284,11 +284,11 @@
       </div>
     </aside>
 
-    <section class="book-section">
-      <form>
-        <h2 class="main__title">Start booking now</h2>
-        <input type="text" class="input" />
-        <input type="email" class="input" />
+    <section class="book-section book-section__container">
+      <form class="book-section__form">
+        <h2 class="main__title main__title--align-left">Start booking now</h2>
+        <input type="text" class="input book-section__input" placeholder="Full name" />
+        <input type="email" class="input book-section__input" placeholder="Email address" />
 
         <div class="radio">
           <input type="radio" id="small" name="group" value="s" class="radio__button" />
@@ -300,7 +300,7 @@
           <label for="large" class="radio__label">Large tour group</label>
         </div>
 
-        <button type="submit" class="button-link">Next step →</button>
+        <button type="submit" class="button-link button-link--green button-link--no-margin">Next step →</button>
       </form>
     </section>
   </main>

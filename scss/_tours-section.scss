@@ -166,13 +166,4 @@
     max-width: 140px;
     top: -30px;
   }
-
-  &--tours-section {
-    color: $color-white;
-    background-color: $color-primary;
-
-    &::after {
-      background-color: $color-primary;
-    }
-  }
 }

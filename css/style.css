@@ -366,10 +366,11 @@ nav,
   text-align: center;
   color: #777;
   background-color: #fff;
+  border: none;
   border-radius: 50px;
   width: 200px;
   margin: auto;
-  padding: 15px;
+  padding: 13px;
   display: block;
   position: relative;
   transition-duration: 0.2s;
@@ -394,6 +395,13 @@ nav,
 .button-link:hover::after {
   opacity: 0;
   transform: scale(1.4, 1.6);
+}
+.button-link--green {
+  color: #fff;
+  background-color: #55c57a;
+}
+.button-link--green::after {
+  background-color: #55c57a;
 }
 
 .nav-button {
@@ -702,13 +710,6 @@ nav,
   max-width: 140px;
   top: -30px;
 }
-.button-link--tours-section {
-  color: #fff;
-  background-color: #55c57a;
-}
-.button-link--tours-section::after {
-  background-color: #55c57a;
-}
 
 .stories-section {
   position: relative;
@@ -774,6 +775,46 @@ nav,
 .main__link--center {
   text-align: center;
   margin-top: 75px;
+}
+
+.book-section {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+.book-section__container {
+  padding: 80px 0;
+}
+.book-section__form {
+  background-image: linear-gradient(#ffffffe6, #ffffffe6), url(../img/nat-10.jpg);
+  background-size: cover;
+  box-shadow: 0 1px 30px #00000026;
+  max-width: 355px;
+  padding: 35px 50px 50px;
+  margin: auto;
+}
+.book-section__input {
+  margin-bottom: 35px;
+}
+
+.main__title--align-left {
+  text-align: left;
+  margin: 15px 0 25px;
+}
+
+.input {
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  padding: 15px;
+}
+
+.radio__label {
+  font-size: 0.8rem;
+}
+
+.button-link--no-margin {
+  max-width: 60%;
+  margin: 35px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
