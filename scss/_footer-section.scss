@@ -12,13 +12,22 @@
     padding: 50px 0;
   }
 
+  &__list {
+    border-top: 1px solid $color-grey-dark-2;
+    padding: 10px;
+  }
+
   &__list-item {
+    text-align: center;
     list-style-type: none;
-    display: inline;
+    display: inline-block;
+    padding: 0 5px;
   }
 
   &__link {
+    font-size: 0.7rem;
     text-decoration: none;
+    text-transform: uppercase;
     color: $color-white;
   }
 }
