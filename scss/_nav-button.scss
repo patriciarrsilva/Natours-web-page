@@ -11,12 +11,23 @@
   z-index: 2;
 
   &__img {
-    width: 30px;
+    width: 80%;
     margin: auto;
 
     &:hover {
       width: 35px;
       cursor: pointer;
     }
+  }
+}
+
+/* Media queries */
+
+@media screen and (min-width: 901px) {
+  .nav-button {
+    width: 65px;
+    height: 65px;
+    top: 60px;
+    right: 60px;
   }
 }

@@ -1,9 +1,6 @@
-.benefits-section__paragraph {
-  font-size: 0.77rem;
-}
-
 .benefits-section {
-  @include background-image("../img/nat-4.jpg",
+  @include background-image(
+    "../img/nat-4.jpg",
     $color-primary-light-trans,
     $color-primary-dark-trans,
     0,
@@ -13,12 +10,14 @@
     100%,
     95%,
     0%,
-    100%);
+    100%
+  );
   text-align: center;
   margin-top: -60px;
 
   &__container {
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 
     & .benefits-section__article:first-child {
       margin-top: 100px;
@@ -47,5 +46,50 @@
   &__img {
     width: 50px;
     margin: 10px 0 20px;
+  }
+
+  &__paragraph {
+    font-size: 0.77rem;
+  }
+}
+
+/* Media queries */
+
+@media screen and (min-width: 901px) {
+  .benefits-section {
+    @include background-image(
+      "../img/nat-4.jpg",
+      $color-primary-light-trans,
+      $color-primary-dark-trans,
+      0,
+      20vh,
+      100%,
+      0,
+      100%,
+      80%,
+      0%,
+      100%
+    );
+    margin-top: -115px;
+
+    &__container {
+      padding: 200px 0;
+      flex-direction: row;
+      justify-content: space-between;
+
+      & .benefits-section__article:first-child {
+        margin-top: 0;
+        margin-left: 0;
+      }
+
+      & .benefits-section__article:last-child {
+        margin-bottom: 0;
+        margin-right: 0;
+      }
+    }
+
+    &__article {
+      margin: 0 25px;
+    }
   }
 }

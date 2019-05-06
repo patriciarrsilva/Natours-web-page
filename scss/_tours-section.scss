@@ -1,7 +1,7 @@
 .tours-section {
   background-color: $color-grey-light-1;
-  margin-top: -55px;
-  padding: 90px 20px 75px;
+  margin-top: -130px;
+  padding: 180px 20px 75px;
 
   &__article {
     background-color: $color-white;
@@ -22,7 +22,8 @@
     background-blend-mode: screen;
 
     &--orange {
-      @include background-image("../img/nat-5.jpg",
+      @include background-image(
+        "../img/nat-5.jpg",
         $color-secondary-light,
         $color-secondary-dark,
         0,
@@ -32,11 +33,13 @@
         100%,
         85%,
         0,
-        100%);
+        100%
+      );
     }
 
     &--green {
-      @include background-image("../img/nat-6.jpg",
+      @include background-image(
+        "../img/nat-6.jpg",
         $color-primary-light,
         $color-primary-dark,
         0,
@@ -46,11 +49,13 @@
         100%,
         85%,
         0,
-        100%);
+        100%
+      );
     }
 
     &--blue {
-      @include background-image("../img/nat-7.jpg",
+      @include background-image(
+        "../img/nat-7.jpg",
         $color-tertiary-light,
         $color-tertiary-dark,
         0,
@@ -60,7 +65,8 @@
         100%,
         85%,
         0,
-        100%);
+        100%
+      );
     }
   }
 
@@ -82,21 +88,27 @@
     box-decoration-break: clone;
 
     &--orange {
-      background-image: linear-gradient(to right bottom,
-          $color-secondary-light-trans,
-          $color-secondary-dark-trans);
+      background-image: linear-gradient(
+        to right bottom,
+        $color-secondary-light-trans,
+        $color-secondary-dark-trans
+      );
     }
 
     &--green {
-      background-image: linear-gradient(to right bottom,
-          $color-primary-light-trans,
-          $color-primary-dark-trans);
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light-trans,
+        $color-primary-dark-trans
+      );
     }
 
     &--blue {
-      background-image: linear-gradient(to right bottom,
-          $color-tertiary-light-trans,
-          $color-tertiary-dark-trans);
+      background-image: linear-gradient(
+        to right bottom,
+        $color-tertiary-light-trans,
+        $color-tertiary-dark-trans
+      );
     }
   }
 
@@ -114,23 +126,28 @@
     border-radius: 0 0 3px 3px;
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 
-
     &--orange {
-      background-image: linear-gradient(to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark);
+      background-image: linear-gradient(
+        to right bottom,
+        $color-secondary-light,
+        $color-secondary-dark
+      );
     }
 
     &--green {
-      background-image: linear-gradient(to right bottom,
-          $color-primary-light,
-          $color-primary-dark);
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary-dark
+      );
     }
 
     &--blue {
-      background-image: linear-gradient(to right bottom,
-          $color-tertiary-light,
-          $color-tertiary-dark);
+      background-image: linear-gradient(
+        to right bottom,
+        $color-tertiary-light,
+        $color-tertiary-dark
+      );
     }
   }
 

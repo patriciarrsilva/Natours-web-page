@@ -19,6 +19,7 @@ nav,
   font-family: $default-font-family, sans-serif;
   color: $color-grey-dark;
   line-height: 1.7;
+  position: relative;
 }
 
 .button-link {
@@ -68,5 +69,13 @@ nav,
     &::after {
       background-color: $color-primary;
     }
+  }
+}
+
+/* Media queries */
+
+@media screen and (min-width: 901px) {
+  .body {
+    margin: 30px;
   }
 }
