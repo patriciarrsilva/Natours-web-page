@@ -633,7 +633,6 @@ nav,
   max-width: 355px;
   margin: 0 auto 45px auto;
   padding: 15px;
-  display: inline-block;
   transition: transform 0.4s;
 }
 .benefits-section__article:hover {
@@ -679,11 +678,15 @@ nav,
   margin-top: -130px;
   padding: 180px 20px 75px;
 }
+.tours-section__cards {
+  display: flex;
+  flex-direction: column;
+}
 .tours-section__article {
   background-color: #fff;
   box-shadow: 0 1px 30px #00000026;
   border-radius: 3px;
-  max-width: 355px;
+  width: 355px;
   margin: 0 auto 50px;
   position: relative;
 }
@@ -792,6 +795,12 @@ nav,
   top: -30px;
 }
 
+/* Media queries */
+@media screen and (min-width: 901px) {
+  .tours-section__cards {
+    flex-direction: row;
+  }
+}
 .stories-section {
   position: relative;
   padding: 80px 0 50px;

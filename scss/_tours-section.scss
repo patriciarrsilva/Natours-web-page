@@ -3,11 +3,16 @@
   margin-top: -130px;
   padding: 180px 20px 75px;
 
+  &__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__article {
     background-color: $color-white;
     box-shadow: $box-shadow-3;
     border-radius: 3px;
-    max-width: 355px;
+    width: 355px;
     margin: 0 auto 50px;
     position: relative;
 
@@ -182,5 +187,20 @@
   &--tours-card {
     max-width: 140px;
     top: -30px;
+  }
+}
+
+/* Media queries */
+
+@media screen and (min-width: 901px) {
+  .tours-section {
+    &__cards {
+      flex-direction: row;
+      //align-items: center;
+    }
+
+    &__article {
+      //margin: auto;
+    }
   }
 }
