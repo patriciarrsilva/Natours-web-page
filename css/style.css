@@ -830,20 +830,37 @@ nav,
   padding: 50px 0;
 }
 .footer__list {
-  border-top: 1px solid #999;
-  padding: 10px;
-}
-.footer__list-item {
   text-align: center;
+  border-top: 1px solid #999;
+  padding: 10px 0 0;
+  margin: 0 0 50px;
+}
+.footer__item {
   list-style-type: none;
   display: inline-block;
   padding: 0 5px;
+  transition: all 0.2s;
+}
+.footer__item:hover .footer__link {
+  color: #55c57a;
+}
+.footer__item:hover {
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: 0 1px 30px #00000026;
+  background-color: #333;
 }
 .footer__link {
   font-size: 0.7rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+}
+.footer__paragraph {
+  font-size: 0.7rem;
+  color: #fff;
+  border-top: 1px solid #999;
+  margin: 0;
+  padding: 15px 0 65px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,15 +13,27 @@
   }
 
   &__list {
+    text-align: center;
     border-top: 1px solid $color-grey-dark-2;
-    padding: 10px;
+    padding: 10px 0 0;
+    margin: 0 0 50px;
   }
 
-  &__list-item {
-    text-align: center;
+  &__item {
     list-style-type: none;
     display: inline-block;
     padding: 0 5px;
+    transition: all 0.2s;
+
+    &:hover .footer__link {
+      color: $color-primary;
+    }
+
+    &:hover {
+      transform: scale(1.2) rotate(5deg);
+      box-shadow: $box-shadow-3;
+      background-color: $color-grey-dark-3;
+    }
   }
 
   &__link {
@@ -29,5 +41,13 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $color-white;
+  }
+
+  &__paragraph {
+    font-size: 0.7rem;
+    color: $color-white;
+    border-top: 1px solid $color-grey-dark-2;
+    margin: 0;
+    padding: 15px 0 65px;
   }
 }
