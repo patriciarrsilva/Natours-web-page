@@ -552,23 +552,22 @@ nav,
 .about-section {
   background-color: #f7f7f7;
   margin-top: -115px;
-  padding-top: 160px;
-  padding-bottom: 100px;
+  padding: 160px 0 100px;
 }
 .about-section__article {
   max-width: 400px;
-  margin: 40px auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 40px auto 0;
 }
 .about-section__text {
-  margin-bottom: 30px;
   flex: 1 380px;
+  margin-bottom: 30px;
 }
 .about-section__images {
-  position: relative;
   flex: 1 380px;
+  position: relative;
 }
 .about-section__images:hover .about-section__image:not(:hover) {
   transform: scale(0.95);
@@ -592,8 +591,8 @@ nav,
 }
 .about-section__image--second {
   top: -15px;
-  transform: scale(1.3);
   z-index: 2;
+  transform: scale(1.3);
 }
 .about-section__image--third {
   top: 15px;
@@ -637,8 +636,8 @@ nav,
   border-radius: 3px;
   box-shadow: 0 1px 30px #00000026;
   max-width: 355px;
-  margin: 0 auto 45px auto;
   padding: 15px;
+  margin: 0 auto 45px auto;
   transition: transform 0.4s;
 }
 .benefits-section__article:hover {
@@ -674,14 +673,14 @@ nav,
     margin-bottom: 0;
   }
   .benefits-section__article {
-    margin: 0;
     flex-basis: 200px;
+    margin: 0;
   }
 }
 .tours-section {
   background-color: #f7f7f7;
-  margin-top: -130px;
   padding: 180px 0 75px;
+  margin-top: -130px;
 }
 .tours-section__cards {
   display: flex;
@@ -693,16 +692,16 @@ nav,
   box-shadow: 0 1px 30px #00000026;
   border-radius: 3px;
   width: 355px;
-  margin: 0 auto 50px;
   position: relative;
+  margin: 0 auto 50px;
 }
-.tours-section__article--margin {
+.tours-section__article--margin-bottom {
   margin-bottom: 80px;
 }
 .tours-section__img {
-  height: 175px;
-  border-radius: 3px 3px 0 0;
   background-blend-mode: screen;
+  border-radius: 3px 3px 0 0;
+  height: 175px;
 }
 .tours-section__img--orange {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg");
@@ -737,9 +736,9 @@ nav,
   right: 16px;
 }
 .tours-section__span {
-  padding: 8px 12px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+  padding: 8px 12px;
 }
 .tours-section__span--orange {
   background-image: linear-gradient(to right bottom, #ffb900d9, #ff7730d9);
@@ -752,8 +751,8 @@ nav,
 }
 .tours-section__list {
   max-width: 65%;
-  margin: auto;
   padding: 0;
+  margin: auto;
 }
 .tours-section__list .main__paragraph--list-item:last-child {
   border: none;
@@ -792,8 +791,8 @@ nav,
   text-align: center;
   list-style-type: none;
   border-bottom: 1px solid #eee;
-  margin: 0;
   padding: 12px;
+  margin: 0;
 }
 
 .button-link--tours-card {
@@ -809,18 +808,36 @@ nav,
     padding: 75px 0;
   }
   .tours-section__article {
-    margin: 0;
+    margin-bottom: 0;
+  }
+  .tours-section__article--margin-rl {
+    margin: 0 50px;
+  }
+  .tours-section__title {
+    font-size: 2rem;
+    top: 30px;
+  }
+
+  .main__paragraph--list-item {
+    font-size: 1rem;
   }
 }
 .stories-section {
   position: relative;
   padding: 80px 0 50px;
 }
+.stories-section__video-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+}
 .stories-section__video {
+  object-fit: cover;
   opacity: 0.15;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -832,18 +849,18 @@ nav,
   background-color: #f7f7f7cc;
   border-radius: 3px;
   max-width: 355px;
-  margin: 0 auto 45px auto;
   padding: 32px 24px 5px 56px;
+  margin: 0 auto 45px auto;
 }
 .stories-section__figure {
   border-radius: 50%;
   width: 125px;
   height: 125px;
-  margin: 0;
   overflow: hidden;
-  float: left;
   shape-outside: circle();
   position: relative;
+  float: left;
+  margin: 0;
   transform: translate(-20px);
 }
 .stories-section__figure:hover .stories-section__figcaption {
@@ -887,9 +904,9 @@ nav,
     padding-top: 75px;
   }
   .stories-section__article {
-    transform: skew(-10deg);
     max-width: 75%;
     padding: 50px;
+    transform: skew(-10deg);
   }
   .stories-section__figure {
     transform: skew(10deg) translate(-20px);
@@ -918,8 +935,8 @@ nav,
   padding: 35px 50px 50px;
 }
 .book-section__input {
-  margin-bottom: 35px;
   display: block;
+  margin-bottom: 35px;
 }
 
 .main__title--align-left {
@@ -992,14 +1009,29 @@ nav,
 /* Media queries */
 @media screen and (min-width: 901px) {
   .book-section__image {
-    max-width: 90%;
+    max-width: 1026px;
+  }
+  .book-section__form {
+    clip-path: polygon(0 0, 75% 0, 65% 100%, 0% 100%);
+  }
+  .book-section__input,
+.book-section .main__title--align-left {
+    width: 55%;
+  }
+
+  .radio {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .book-section__image {
+    max-width: 1140px;
   }
   .book-section__form {
     clip-path: polygon(0 0, 60% 0, 45% 100%, 0% 100%);
   }
   .book-section__input,
-.book-section .main__title--align-left,
-.book-section .radio {
+.book-section .main__title--align-left {
     width: 42%;
   }
 }
@@ -1012,8 +1044,12 @@ nav,
 }
 .footer__image {
   display: block;
-  margin: auto;
   padding: 50px 0;
+  margin: auto;
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
 }
 .footer__list {
   text-align: center;
@@ -1031,9 +1067,9 @@ nav,
   color: #55c57a;
 }
 .footer__item:hover {
-  transform: scale(1.2) rotate(5deg);
-  box-shadow: 0 1px 30px #00000026;
   background-color: #333;
+  box-shadow: 0 1px 30px #00000026;
+  transform: scale(1.2) rotate(5deg);
 }
 .footer__link {
   font-size: 0.7rem;
@@ -1045,8 +1081,51 @@ nav,
   font-size: 0.7rem;
   color: #fff;
   border-top: 1px solid #999;
-  margin: 0;
   padding: 15px 0 65px;
+  margin: 0;
+}
+
+/* Media queries */
+@media screen and (min-width: 901px) {
+  .footer__container {
+    max-width: 100%;
+  }
+  .footer__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__list,
+.footer .footer__paragraph {
+    text-align: left;
+    flex-basis: 365px;
+  }
+  .footer__link,
+.footer .footer__paragraph {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .footer__text {
+    justify-content: space-around;
+  }
+  .footer__list,
+.footer .footer__paragraph {
+    flex-basis: 450px;
+  }
+  .footer__link,
+.footer .footer__paragraph {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .footer__text {
+    justify-content: space-evenly;
+  }
+  .footer__link,
+.footer .footer__paragraph {
+    font-size: 0.9rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

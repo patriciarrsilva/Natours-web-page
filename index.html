@@ -194,7 +194,9 @@
             </div>
           </article>
 
-          <article class="tours-section__article">
+          <article
+            class="tours-section__article tours-section__article--margin-rl"
+          >
             <div class="tours-section__img tours-section__img--green"></div>
             <h3 class="tours-section__title">
               <span class="tours-section__span tours-section__span--green"
@@ -230,7 +232,7 @@
           </article>
 
           <article
-            class="tours-section__article tours-section__article--margin"
+            class="tours-section__article tours-section__article--margin-bottom"
           >
             <div class="tours-section__img tours-section__img--blue"></div>
             <h3 class="tours-section__title">
@@ -302,11 +304,13 @@
       </section>
 
       <aside class="stories-section">
-        <video autoplay muted loop class="stories-section__video">
-          <source src="img/video.webm" type="video/webm" />
-          <source src="img/video.mp4" type="video/mp4" />
-          Sorry, your browser doesn't support embedded videos.
-        </video>
+        <div class="stories-section__video-container">
+          <video autoplay muted loop class="stories-section__video">
+            <source src="img/video.webm" type="video/webm" />
+            <source src="img/video.mp4" type="video/mp4" />
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
 
         <h2 class="main__title main__title--no-margin-top">
           We make people genuinely happy
@@ -422,36 +426,38 @@
           alt="natours logo"
           class="footer__image"
         />
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#" class="footer__link">Company</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Contact us</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Careers</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Privacy policy</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Terms</a>
-          </li>
-        </ul>
-        <p class="footer__paragraph">
-          Built by
-          <span class="footer__item"
-            ><a href="#" class="footer__link">Jonas Schmedtmann</a></span
-          >
-          for his online course
-          <span class="footer__item"
-            ><a href="#" class="footer__link">Advanced CSS and SASS</a></span
-          >. Copyright © by Jonas Schmedtmann. You are 100% allowed to use this
-          webpage for both personal and commercial use, but NOT to claim it as
-          your own design. A credit to the original author, Jonas Schmedtmann,
-          is of course highly appreciated!
-        </p>
+        <div class="footer__text">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Company</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Careers</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms</a>
+            </li>
+          </ul>
+          <p class="footer__paragraph">
+            Built by
+            <span class="footer__item"
+              ><a href="#" class="footer__link">Jonas Schmedtmann</a></span
+            >
+            for his online course
+            <span class="footer__item"
+              ><a href="#" class="footer__link">Advanced CSS and SASS</a></span
+            >. Copyright © by Jonas Schmedtmann. You are 100% allowed to use
+            this webpage for both personal and commercial use, but NOT to claim
+            it as your own design. A credit to the original author, Jonas
+            Schmedtmann, is of course highly appreciated!
+          </p>
+        </div>
       </div>
     </footer>
   </body>

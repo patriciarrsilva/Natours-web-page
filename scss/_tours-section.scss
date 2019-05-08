@@ -1,7 +1,7 @@
 .tours-section {
   background-color: $color-grey-light-1;
-  margin-top: -130px;
   padding: 180px 0 75px;
+  margin-top: -130px;
 
   &__cards {
     display: flex;
@@ -14,18 +14,18 @@
     box-shadow: $box-shadow-3;
     border-radius: 3px;
     width: 355px;
-    margin: 0 auto 50px;
     position: relative;
+    margin: 0 auto 50px;
 
-    &--margin {
+    &--margin-bottom {
       margin-bottom: 80px;
     }
   }
 
   &__img {
-    height: 175px;
-    border-radius: 3px 3px 0 0;
     background-blend-mode: screen;
+    border-radius: 3px 3px 0 0;
+    height: 175px;
 
     &--orange {
       @include background-image(
@@ -89,9 +89,9 @@
   }
 
   &__span {
-    padding: 8px 12px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+    padding: 8px 12px;
 
     &--orange {
       background-image: linear-gradient(
@@ -120,8 +120,8 @@
 
   &__list {
     max-width: 65%;
-    margin: auto;
     padding: 0;
+    margin: auto;
 
     & .main__paragraph--list-item:last-child {
       border: none;
@@ -180,8 +180,8 @@
   text-align: center;
   list-style-type: none;
   border-bottom: 1px solid $color-grey-light-2;
-  margin: 0;
   padding: 12px;
+  margin: 0;
 }
 
 .button-link {
@@ -202,7 +202,20 @@
     }
 
     &__article {
-      margin: 0;
+      margin-bottom: 0;
+
+      &--margin-rl {
+        margin: 0 50px;
+      }
     }
+
+    &__title {
+      font-size: 2rem;
+      top: 30px;
+    }
+  }
+
+  .main__paragraph--list-item {
+    font-size: 1rem;
   }
 }

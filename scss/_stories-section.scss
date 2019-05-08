@@ -2,11 +2,19 @@
   position: relative;
   padding: 80px 0 50px;
 
+  &__video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+  }
+
   &__video {
+    object-fit: cover;
     opacity: 0.15;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     position: absolute;
     top: 0;
     z-index: -1;
@@ -20,19 +28,19 @@
     background-color: $color-grey-light-1-trans-1;
     border-radius: 3px;
     max-width: 355px;
-    margin: 0 auto 45px auto;
     padding: 32px 24px 5px 56px;
+    margin: 0 auto 45px auto;
   }
 
   &__figure {
     border-radius: 50%;
     width: 125px;
     height: 125px;
-    margin: 0;
     overflow: hidden;
-    float: left;
     shape-outside: circle();
     position: relative;
+    float: left;
+    margin: 0;
     transform: translate(-20px);
 
     &:hover .stories-section__figcaption {
@@ -84,9 +92,9 @@
     }
 
     &__article {
-      transform: skew(-10deg);
       max-width: 75%;
       padding: 50px;
+      transform: skew(-10deg);
     }
 
     &__figure {
