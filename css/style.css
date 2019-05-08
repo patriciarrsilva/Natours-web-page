@@ -410,6 +410,12 @@ nav,
   .body {
     margin: 30px;
   }
+
+  .button-link {
+    font-size: 1rem;
+    width: 250px;
+    padding: 15px 20px;
+  }
 }
 .nav-button {
   background-color: #fff;
@@ -572,7 +578,7 @@ nav,
   border-radius: 2px;
   box-shadow: 0 15px 30px #00000033;
   outline-offset: 15px;
-  width: 33.33333333%;
+  width: 33.3333333333%;
   float: left;
   position: relative;
   transition: all 0.2s;
@@ -659,28 +665,28 @@ nav,
   .benefits-section__container {
     padding: 200px 0;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .benefits-section__container .benefits-section__article:first-child {
     margin-top: 0;
-    margin-left: 0;
   }
   .benefits-section__container .benefits-section__article:last-child {
     margin-bottom: 0;
-    margin-right: 0;
   }
   .benefits-section__article {
-    margin: 0 25px;
+    margin: 0;
+    flex-basis: 200px;
   }
 }
 .tours-section {
   background-color: #f7f7f7;
   margin-top: -130px;
-  padding: 180px 20px 75px;
+  padding: 180px 0 75px;
 }
 .tours-section__cards {
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
 }
 .tours-section__article {
   background-color: #fff;
@@ -799,6 +805,11 @@ nav,
 @media screen and (min-width: 901px) {
   .tours-section__cards {
     flex-direction: row;
+    justify-content: space-evenly;
+    padding: 75px 0;
+  }
+  .tours-section__article {
+    margin: 0;
   }
 }
 .stories-section {
@@ -813,6 +824,9 @@ nav,
   position: absolute;
   top: 0;
   z-index: -1;
+}
+.stories-section__stories-container {
+  padding-top: 50px;
 }
 .stories-section__article {
   background-color: #f7f7f7cc;
@@ -867,22 +881,45 @@ nav,
   margin-top: 75px;
 }
 
+/* Media queries */
+@media screen and (min-width: 601px) {
+  .stories-section__stories-container {
+    padding-top: 75px;
+  }
+  .stories-section__article {
+    transform: skew(-10deg);
+    max-width: 75%;
+    padding: 50px;
+  }
+  .stories-section__figure {
+    transform: skew(10deg) translate(-20px);
+  }
+  .stories-section .main__subtitle,
+.stories-section .main__paragraph {
+    transform: skew(10deg);
+  }
+}
 .book-section {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 .book-section__container {
   padding: 80px 0;
 }
-.book-section__form {
-  background-image: linear-gradient(#ffffffe6, #ffffffe6), url(../img/nat-10.jpg);
-  background-size: cover;
-  box-shadow: 0 1px 30px #00000026;
+.book-section__image {
   max-width: 355px;
-  padding: 35px 50px 50px;
+  background-image: url(../img/nat-10.jpg);
+  background-size: cover;
   margin: auto;
+}
+.book-section__form {
+  background-image: linear-gradient(#ffffffe6, #ffffffe6);
+  box-shadow: 0 1px 30px #00000026;
+  width: 100%;
+  padding: 35px 50px 50px;
 }
 .book-section__input {
   margin-bottom: 35px;
+  display: block;
 }
 
 .main__title--align-left {
@@ -952,6 +989,20 @@ nav,
   margin: 35px 0 0;
 }
 
+/* Media queries */
+@media screen and (min-width: 901px) {
+  .book-section__image {
+    max-width: 90%;
+  }
+  .book-section__form {
+    clip-path: polygon(0 0, 60% 0, 45% 100%, 0% 100%);
+  }
+  .book-section__input,
+.book-section .main__title--align-left,
+.book-section .radio {
+    width: 42%;
+  }
+}
 .footer {
   background-color: #333;
 }

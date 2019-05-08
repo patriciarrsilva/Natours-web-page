@@ -74,21 +74,20 @@
     &__container {
       padding: 200px 0;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-evenly;
 
       & .benefits-section__article:first-child {
         margin-top: 0;
-        margin-left: 0;
       }
 
       & .benefits-section__article:last-child {
         margin-bottom: 0;
-        margin-right: 0;
       }
     }
 
     &__article {
-      margin: 0 25px;
+      margin: 0;
+      flex-basis: 200px;
     }
   }
 }

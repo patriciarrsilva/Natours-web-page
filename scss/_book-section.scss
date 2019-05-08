@@ -9,18 +9,23 @@
     padding: 80px 0;
   }
 
-  &__form {
-    background-image: linear-gradient($color-white-trans, $color-white-trans),
-      url(../img/nat-10.jpg);
-    background-size: cover;
-    box-shadow: $box-shadow-3;
+  &__image {
     max-width: 355px;
-    padding: 35px 50px 50px;
+    background-image: url(../img/nat-10.jpg);
+    background-size: cover;
     margin: auto;
+  }
+
+  &__form {
+    background-image: linear-gradient($color-white-trans, $color-white-trans);
+    box-shadow: $box-shadow-3;
+    width: 100%;
+    padding: 35px 50px 50px;
   }
 
   &__input {
     margin-bottom: 35px;
+    display: block;
   }
 }
 
@@ -96,4 +101,24 @@
 .button-link--no-margin {
   max-width: 60%;
   margin: 35px 0 0;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 901px) {
+  .book-section {
+    &__image {
+      max-width: 90%;
+    }
+
+    &__form {
+      clip-path: polygon(0 0, 60% 0, 45% 100%, 0% 100%);
+    }
+
+    &__input,
+    .main__title--align-left,
+    .radio {
+      width: 42%;
+    }
+  }
 }

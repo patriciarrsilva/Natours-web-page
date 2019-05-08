@@ -1,11 +1,12 @@
 .tours-section {
   background-color: $color-grey-light-1;
   margin-top: -130px;
-  padding: 180px 20px 75px;
+  padding: 180px 0 75px;
 
   &__cards {
     display: flex;
     flex-direction: column;
+    padding-top: 40px;
   }
 
   &__article {
@@ -196,11 +197,12 @@
   .tours-section {
     &__cards {
       flex-direction: row;
-      //align-items: center;
+      justify-content: space-evenly;
+      padding: 75px 0;
     }
 
     &__article {
-      //margin: auto;
+      margin: 0;
     }
   }
 }

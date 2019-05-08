@@ -12,6 +12,10 @@
     z-index: -1;
   }
 
+  &__stories-container {
+    padding-top: 50px;
+  }
+
   &__article {
     background-color: $color-grey-light-1-trans-1;
     border-radius: 3px;
@@ -69,4 +73,29 @@
 .main__link--center {
   text-align: center;
   margin-top: 75px;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 601px) {
+  .stories-section {
+    &__stories-container {
+      padding-top: 75px;
+    }
+
+    &__article {
+      transform: skew(-10deg);
+      max-width: 75%;
+      padding: 50px;
+    }
+
+    &__figure {
+      transform: skew(10deg) translate(-20px);
+    }
+
+    .main__subtitle,
+    .main__paragraph {
+      transform: skew(10deg);
+    }
+  }
 }
