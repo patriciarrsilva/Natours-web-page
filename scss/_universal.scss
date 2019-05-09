@@ -19,7 +19,6 @@ nav,
   font-family: $default-font-family, sans-serif;
   color: $color-grey-dark;
   line-height: 1.7;
-  position: relative;
 }
 
 .button-link {
@@ -72,7 +71,11 @@ nav,
   }
 }
 
-/* Media queries */
+/*
+ * Media queries
+ */
+
+/* >= 901px */
 
 @media screen and (min-width: 901px) {
   .body {
@@ -85,6 +88,8 @@ nav,
     padding: 15px 20px;
   }
 }
+
+/* >= 1800px */
 
 @media screen and (min-width: 1800px) {
   .body {

@@ -435,13 +435,13 @@ nav,
  * Logo
  */
 .header__logo {
-  margin: 32px;
+  margin: 30px;
   position: absolute;
   z-index: 1;
 }
 
 .logo {
-  width: 55px;
+  width: 85px;
 }
 .logo__img {
   width: 100%;
@@ -495,15 +495,13 @@ nav,
   align-items: center;
 }
 .header__title {
-  font-size: 3.2rem;
-  letter-spacing: 4px;
+  font-size: 3.3rem;
   font-weight: normal;
   margin: 0;
 }
 .header__subtitle {
   font-size: 1rem;
-  letter-spacing: 4px;
-  margin: 0 0 50px 0;
+  margin: 20px 0 55px;
 }
 
 /*
@@ -511,42 +509,11 @@ nav,
  */
 /* >= 601px */
 @media screen and (min-width: 601px) {
-  /*
-   * Logo
-   */
-  .header__logo {
-    margin: 32px;
-  }
-
-  .logo {
-    width: 55px;
-  }
-
-  /*
-   * Navigation button
-   */
-  .nav-button {
-    width: 55px;
-    height: 55px;
-    top: 33px;
-    right: 33px;
-  }
-
-  /*
-   * Header
-   */
-  .header__section {
-    background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 79%, 0% 100%);
-  }
   .header__title {
-    font-size: 2.9rem;
-    letter-spacing: 28px;
+    letter-spacing: 25px;
   }
   .header__subtitle {
-    font-size: 1rem;
     letter-spacing: 14px;
-    margin: 0 0 50px 0;
   }
 }
 /* >= 901px */
@@ -575,14 +542,16 @@ nav,
   /*
    * Header
    */
+  .header__section {
+    background-position: top;
+  }
   .header__title {
-    font-size: 3.7rem;
-    letter-spacing: 35px;
+    font-size: 4.5rem;
+    letter-spacing: 40px;
   }
   .header__subtitle {
-    font-size: 1.3rem;
-    letter-spacing: 17px;
-    margin: 0 0 60px 0;
+    font-size: 1.5rem;
+    letter-spacing: 20px;
   }
 }
 /* >= 1800px */
@@ -618,7 +587,6 @@ nav,
   .header__subtitle {
     font-size: 1.5rem;
     letter-spacing: 20px;
-    margin: 0 0 80px 0;
   }
 }
 .main__title {
@@ -675,7 +643,7 @@ nav,
 }
 .about-section {
   background-color: #f7f7f7;
-  margin-top: -175px;
+  margin-top: -115px;
   padding: 160px 0 100px;
 }
 .about-section__article {

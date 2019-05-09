@@ -1,3 +1,52 @@
+/*
+ * Logo
+ */
+
+.header__logo {
+  margin: 32px;
+  position: absolute;
+  z-index: 1;
+}
+
+.logo {
+  width: 55px;
+
+  &__img {
+    width: 100%;
+  }
+}
+
+/*
+ * Navigation button
+ */
+
+.nav-button {
+  background-color: $color-white;
+  border: none;
+  border-radius: 50%;
+  width: 57px;
+  height: 57px;
+  box-shadow: $box-shadow-1;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 1;
+
+  &__img {
+    width: 80%;
+    margin: auto;
+
+    &:hover {
+      width: 35px;
+      cursor: pointer;
+    }
+  }
+}
+
+/*
+ * Header
+ */
+
 %header-titles {
   text-transform: uppercase;
   text-align: center;
@@ -6,67 +55,7 @@
 }
 
 .header {
-  @include background-image("../img/hero-small.jpg",
-    $color-primary-light-trans,
-    $color-primary-dark-trans,
-    0,
-    0,
-    100%,
-    0,
-    100%,
-    85vh,
-    0%,
-    100%,
-    center);
-  height: 95vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &__logo {
-    padding: 30px 0 0 30px;
-    position: absolute;
-    z-index: 1;
-  }
-
-  &__title {
-    @extend %header-titles;
-    font-size: 3.3rem;
-    font-weight: normal;
-    margin: 0;
-  }
-
-  &__subtitle {
-    @extend %header-titles;
-    font-size: 1rem;
-    margin: 20px 0 55px;
-  }
-}
-
-.logo {
-  width: 85px;
-
-  &__img {
-    width: 100%;
-  }
-}
-
-/* Media queries */
-
-@media screen and (min-width: 601px) {
-  .header {
-    &__title {
-      letter-spacing: 25px;
-    }
-
-    &__subtitle {
-      letter-spacing: 14px;
-    }
-  }
-}
-
-@media screen and (min-width: 901px) {
-  .header {
+  &__section {
     @include background-image("../img/hero-small.jpg",
       $color-primary-light-trans,
       $color-primary-dark-trans,
@@ -75,14 +64,161 @@
       100%,
       0,
       100%,
-      75vh,
+      85vh,
       0%,
       100%,
       center);
+    height: 95vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    @extend %header-titles;
+    font-size: 3.2rem;
+    letter-spacing: 4px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  &__subtitle {
+    @extend %header-titles;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    margin: 0 0 50px 0;
   }
 }
 
+/*
+ * Media queries
+ */
+
+/* >= 601px */
+
+@media screen and (min-width: 601px) {
+  /*
+   * Logo
+   */
+
+  .header__logo {
+    margin: 32px;
+  }
+
+  .logo {
+    width: 55px;
+  }
+
+  /*
+   * Navigation button
+   */
+
+  .nav-button {
+    width: 55px;
+    height: 55px;
+    top: 33px;
+    right: 33px;
+  }
+
+  /*
+   * Header
+   */
+
+  .header {
+    &__section {
+      background-position: top;
+      clip-path: polygon(0 0, 100% 0, 100% 79%, 0% 100%);
+    }
+
+    &__title {
+      font-size: 2.9rem;
+      letter-spacing: 28px;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+      letter-spacing: 14px;
+      margin: 0 0 50px 0;
+    }
+  }
+}
+
+/* >= 901px */
+
+@media screen and (min-width: 901px) {
+  /*
+   * Logo
+   */
+
+  .header__logo {
+    margin: 40px;
+  }
+
+  .logo {
+    width: 68px;
+  }
+
+  /*
+   * Navigation button
+   */
+
+  .nav-button {
+    width: 70px;
+    height: 70px;
+    top: 60px;
+    right: 60px;
+  }
+
+  /*
+   * Header
+   */
+
+  .header {
+    &__title {
+      font-size: 3.7rem;
+      letter-spacing: 35px;
+    }
+
+    &__subtitle {
+      font-size: 1.3rem;
+      letter-spacing: 17px;
+      margin: 0 0 60px 0;
+    }
+  }
+}
+
+/* >= 1800px */
+
 @media screen and (min-width: 1800px) {
+  /*
+   * Logo
+   */
+
+  .header__logo {
+    margin: 50px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  /*
+   * Navigation button
+   */
+
+  .nav-button {
+    width: 85px;
+    height: 85px;
+    top: 70px;
+    right: 70px;
+  }
+
+  /*
+   * Header
+   */
+
   .header {
     &__title {
       font-size: 4.5rem;
@@ -92,6 +228,7 @@
     &__subtitle {
       font-size: 1.5rem;
       letter-spacing: 20px;
+      margin: 0 0 80px 0;
     }
   }
 }
