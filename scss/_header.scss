@@ -6,8 +6,7 @@
 }
 
 .header {
-  @include background-image(
-    "../img/hero-small.jpg",
+  @include background-image("../img/hero-small.jpg",
     $color-primary-light-trans,
     $color-primary-dark-trans,
     0,
@@ -18,17 +17,16 @@
     85vh,
     0%,
     100%,
-    center
-  );
+    center);
   height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__logo {
     padding: 30px 0 0 30px;
-  }
-
-  &__main {
-    position: relative;
-    top: 12%;
+    position: absolute;
+    z-index: 1;
   }
 
   &__title {
@@ -47,7 +45,6 @@
 
 .logo {
   width: 85px;
-  display: block;
 
   &__img {
     width: 100%;
@@ -56,10 +53,21 @@
 
 /* Media queries */
 
+@media screen and (min-width: 601px) {
+  .header {
+    &__title {
+      letter-spacing: 25px;
+    }
+
+    &__subtitle {
+      letter-spacing: 14px;
+    }
+  }
+}
+
 @media screen and (min-width: 901px) {
   .header {
-    @include background-image(
-      "../img/hero-small.jpg",
+    @include background-image("../img/hero-small.jpg",
       $color-primary-light-trans,
       $color-primary-dark-trans,
       0,
@@ -70,7 +78,20 @@
       75vh,
       0%,
       100%,
-      center
-    );
+      center);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .header {
+    &__title {
+      font-size: 4.5rem;
+      letter-spacing: 40px;
+    }
+
+    &__subtitle {
+      font-size: 1.5rem;
+      letter-spacing: 20px;
+    }
   }
 }
