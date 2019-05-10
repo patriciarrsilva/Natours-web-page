@@ -460,7 +460,7 @@ nav,
   position: fixed;
   top: 25px;
   right: 25px;
-  z-index: 1;
+  z-index: 2;
 }
 .nav-button__img {
   width: 80%;
@@ -625,7 +625,7 @@ nav,
   color: #55c57a;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   letter-spacing: 2px;
   margin: 0;
   transition-duration: 0.2s;
@@ -661,79 +661,133 @@ nav,
   transform: translate(0, -4px);
 }
 
-/* Media queries */
+/*
+ * Media queries
+ */
+/* >= 901px */
+@media screen and (min-width: 901px) {
+  .main__title {
+    font-size: 2.1rem;
+  }
+  .main__subtitle,
+.main .main__paragraph,
+.main .main__link {
+    font-size: 1rem;
+  }
+}
+/* >= 1800px */
 @media screen and (min-width: 1800px) {
   .main__title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
-  .main__subtitle {
-    font-size: 0.9rem;
-  }
-  .main__paragraph {
-    font-size: 0.9rem;
+  .main__subtitle,
+.main .main__paragraph,
+.main .main__link {
+    font-size: 1.2rem;
   }
 }
 .about-section {
   background-color: #f7f7f7;
-  margin-top: -175px;
-  padding: 160px 0 100px;
+  padding: 10rem 0 0;
+  margin-top: -20vh;
 }
 .about-section__article {
-  max-width: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 40px auto 0;
+  max-width: 18rem;
+  margin: 3rem auto 0;
 }
-.about-section__text {
-  flex: 1 380px;
-  margin-bottom: 30px;
-}
-.about-section__images {
-  flex: 1 380px;
+.about-section__images-container {
   position: relative;
+  height: 17rem;
 }
 .about-section__images:hover .about-section__image:not(:hover) {
   transform: scale(0.95);
 }
 .about-section__image {
-  box-sizing: content-box;
-  border-radius: 2px;
-  box-shadow: 0 15px 30px #00000033;
-  outline-offset: 15px;
-  width: 33.3333333333%;
   float: left;
   position: relative;
-  transition: all 0.2s;
-}
-.about-section__image:hover {
-  outline: 13px solid #55c57a;
-  transform: scale(1.05) translate(0, -5px);
+  width: 33.3333333333%;
+  box-shadow: 0 15px 30px #00000033;
+  outline-offset: 15px;
 }
 .about-section__image--first {
+  top: 0;
   transform: scale(1.2);
 }
 .about-section__image--second {
-  top: -15px;
-  z-index: 2;
+  top: -1rem;
   transform: scale(1.3);
+  z-index: 2;
 }
 .about-section__image--third {
-  top: 15px;
+  top: 1rem;
+  left: 0;
   transform: scale(1.1);
+  z-index: 1;
+}
+.about-section__image:hover {
+  outline: 10px solid #55c57a;
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 15px 30px #00000033;
+  z-index: 3;
 }
 
-/* Media queries */
+/*
+ * Media queries
+ */
+/* >= 901px */
 @media screen and (min-width: 901px) {
   .about-section {
-    padding-top: 230px;
+    padding: 15rem 0 5rem;
   }
   .about-section__article {
-    max-width: 100%;
-    margin-top: 75px;
+    max-width: 71rem;
+    margin-top: 5rem;
+  }
+  .about-section__text,
+.about-section .about-section__images-container {
+    display: inline-block;
+    width: calc((100% - 5rem) / 2);
   }
   .about-section__text {
-    margin-right: 50px;
+    margin-right: 4rem;
+  }
+  .about-section__image {
+    width: 45%;
+    box-shadow: 0 15px 30px #00000033;
+    border-radius: 2px;
+    position: absolute;
+    transition: all 0.2s;
+    float: none;
+  }
+  .about-section__image--first {
+    left: 2rem;
+    top: -1rem;
+  }
+  .about-section__image--second {
+    right: 1rem;
+    top: 1rem;
+    z-index: 1;
+  }
+  .about-section__image--third {
+    left: 27%;
+    top: 5rem;
+    z-index: 2;
+  }
+}
+/* >= 1800px */
+@media screen and (min-width: 1800px) {
+  .about-section {
+    padding-bottom: 15rem;
+  }
+  .about-section__article {
+    max-width: 1368px;
+  }
+  .about-section__images-container {
+    position: relative;
+    height: 20rem;
+  }
+  .about-section__image {
+    width: 50%;
   }
 }
 .benefits-section {
@@ -743,7 +797,7 @@ nav,
   background-position: initial;
   clip-path: polygon(0 10vh, 100% 0, 100% 95%, 0% 100%);
   text-align: center;
-  margin-top: -60px;
+  margin-top: -20vh;
 }
 .benefits-section__container {
   display: flex;
@@ -783,7 +837,6 @@ nav,
     background-size: cover;
     background-position: initial;
     clip-path: polygon(0 20vh, 100% 0, 100% 80%, 0% 100%);
-    margin-top: -115px;
   }
   .benefits-section__container {
     padding: 200px 0;

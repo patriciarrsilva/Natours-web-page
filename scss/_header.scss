@@ -30,7 +30,7 @@
   position: fixed;
   top: 25px;
   right: 25px;
-  z-index: 1;
+  z-index: 2;
 
   &__img {
     width: 80%;
@@ -56,7 +56,8 @@
 
 .header {
   &__section {
-    @include background-image("../img/hero-small.jpg",
+    @include background-image(
+      "../img/hero-small.jpg",
       $color-primary-light-trans,
       $color-primary-dark-trans,
       0,
@@ -67,7 +68,8 @@
       85vh,
       0%,
       100%,
-      center);
+      center
+    );
     height: 95vh;
     position: relative;
     display: flex;
